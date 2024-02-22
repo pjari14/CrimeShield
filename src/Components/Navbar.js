@@ -1,11 +1,11 @@
 import React from "react";
-import image from "../Logo.png";
+import image from "../CyberIris-removebg-preview.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="navbar  navbar-expand-lg navbar-light bg-light ">
-      <div className="container-fluid ">
+    <nav className="navbar  navbar-expand-lg navbar-light bg-light text-large">
+      <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           <img className="" height="50%" width="50%" src={image} alt="..." />
         </Link>
@@ -38,7 +38,7 @@ const Navbar = () => {
               </Link>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <Link class="dropdown-item" to="/womenCrime">
+                  <Link class="dropdown-item" to="/Complaint">
                     Women/Children related chrime
                   </Link>
                 </li>
