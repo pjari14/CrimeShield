@@ -1,7 +1,7 @@
 const router = require("express").Router();
 
 router.get("/get", async (req, res) => {
-  return res.status(404).json({ msg: "Hello User!" });
+  return res.status(404).json({ msg: "Hello Lawdwe!" });
 });
 
 router.post("/login", async (req, res) => {
