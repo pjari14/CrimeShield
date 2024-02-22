@@ -6,7 +6,7 @@ router.get("/get", async (req, res) => {
 
 router.post("/login", async (req, res) => {
   const u = req.body;
-  return res.status(200).json({ u, msg: "Bhag lawde!" });
+  return res.status(200).json({ u, msg: "Bhag"});
 });
 
 module.exports = router;
