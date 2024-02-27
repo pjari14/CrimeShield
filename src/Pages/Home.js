@@ -72,7 +72,7 @@ const Home = () => {
       <div class="page-section" id="resources">
         <div class="container p-4 d-flex flex-column justify-content-center align-items-center">
           <div class="text-center" style={{ width: "100%" }}>
-            <h2 class="section-heading text-uppercase p-5 mx-0 my-4 bg-danger">
+            <h2 class="section-heading text-uppercase p-5 mx-0 my-4 text-dark">
               Resources
             </h2>
           </div>

@@ -17,7 +17,7 @@ const Cards = () => {
                 cyber safety rules. They’ll help protect you and your family
                 from threats that could harm your data and devices.
               </p>
-              <Link href="#" class="card-link">
+              <Link to="#" class="btn btn-sm btn-danger">
                 Read More
               </Link>
             </div>
@@ -35,7 +35,7 @@ const Cards = () => {
                 Cyber awareness is about understanding the risks and knowing how
                 to protect yourself and others from cyber threats.
               </p>
-              <Link href="#" class="card-link">
+              <Link to="#" class="btn btn-sm btn-danger">
                 Read More
               </Link>
             </div>
@@ -53,7 +53,7 @@ const Cards = () => {
                 Step by step guide for citizens to report crime and keep track
                 on them online.
               </p>
-              <Link href="#" class="card-link">
+              <Link to="#" class="btn btn-sm btn-danger">
                 Read More
               </Link>
             </div>
@@ -71,7 +71,7 @@ const Cards = () => {
                 Know more about current crimes,helpline noumbers for safety.
               </h6>
               <p class="card-text"></p>
-              <Link href="#" class="card-link">
+              <Link to="#" class="btn btn-sm btn-danger">
                 Read More
               </Link>
             </div>
