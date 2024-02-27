@@ -3,7 +3,7 @@ import React from "react";
 const Incident = () => {
     return(
         <>
-        <h1>Record Ur Incidents here!</h1>
+        <h1>Record Ur gHATNA here!</h1>
         </> 
 );
 };
