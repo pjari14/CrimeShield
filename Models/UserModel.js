@@ -16,6 +16,14 @@ const userSchema = new mongoose.Schema(
       required: true,
       unique: true,
     },
+    ContactNo :{
+      type:String,
+      required:true,
+  },
+  Address: {
+      type:String,
+      required:true,
+  },
     userType: {
       type: String,
       required: true,
