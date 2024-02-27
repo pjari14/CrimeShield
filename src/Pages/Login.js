@@ -1,5 +1,6 @@
 import React from "react";
-import image from "../CyberIris-removebg-preview.png";
+import image from "../Assets/images/Heading__1_-removebg-preview.png";
+import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <section className="bg-light py-5 py-md-5 py-xl-8">
@@ -17,10 +18,10 @@ const Login = () => {
                   alt="BootstrapBrain Logo"
                 />
                 <hr className="border-primary-subtle mb-4" />
-                <h2 className="h1 mb-4">Ensuring your safety first.</h2>
-                <p className="lead mb-5">
+                <h2 className="h1 mb-4">
                   Reporting incidents made easy. Sign in here
-                </p>
+                </h2>
+                <p className="lead mb-5"></p>
               </div>
             </div>
           </div>
@@ -32,7 +33,7 @@ const Login = () => {
                     <div className="mb-4">
                       <h3>Sign in</h3>
                       <p>
-                        Don't have an account? <a href="#!">Sign up</a>
+                        Don't have an account? <Link to="/signup">Sign up</Link>
                       </p>
                     </div>
                   </div>

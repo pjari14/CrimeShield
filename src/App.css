@@ -1,0 +1,40 @@
+@font-face {
+    font-family: montserrat;
+    src: url(./Assets/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+*{
+    font-family: montserrat !important;
+    font-weight: 600;
+    
+}
+
+.bg-dark{
+    background-color: #253439 !important;
+    font-size: larger;
+    
+}
+
+#services{
+    background-color: #e7ffe3;
+   
+}
+.item{
+    position: absolute;
+   
+}
+.carousel-inner {
+    display: block;
+    height: 700px !important;
+    width: 100% !important;
+}
+
+
+ div.scroll {
+     background-color: #fed9ff;
+    width:100%;
+     height: 300px;
+     overflow: auto;
+     text-align: justify;
+     padding: 20px;
+ }

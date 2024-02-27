@@ -10,7 +10,7 @@ const Footer = () => {
               <div class="col-md-2">
                 <h6 class="text-uppercase font-weight-bold">
                   <a href="#!" class="text-dark">
-                    About us
+                    Blog
                   </a>
                 </h6>
               </div>
@@ -18,7 +18,7 @@ const Footer = () => {
               <div class="col-md-2">
                 <h6 class="text-uppercase font-weight-bold">
                   <a href="#!" class="text-dark">
-                    Products
+                    FAQ's
                   </a>
                 </h6>
               </div>
@@ -26,7 +26,7 @@ const Footer = () => {
               <div class="col-md-2">
                 <h6 class="text-uppercase font-weight-bold">
                   <a href="#!" class="text-dark">
-                    Awards
+                    Usefull Links
                   </a>
                 </h6>
               </div>
@@ -67,7 +67,7 @@ const Footer = () => {
         <div class="text-center p-3">
           © 2020 Copyright:
           <Link class="text-dark" to="/">
-            Cyberiris
+            SCRP
           </Link>
         </div>
       </footer>

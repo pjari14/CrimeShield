@@ -2,10 +2,12 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+
 import Home from "./Pages/Home";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
 import Complaint from "./Pages/complaint";
+
 function App() {
   return (
     <div>
