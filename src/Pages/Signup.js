@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../Logo.png";
+import image from "../Assets/images/Heading__1_-removebg-preview.png";
 const Signup = () => {
   return (
     <section className="bg-light py-5 py-md-5 py-xl-8">
@@ -12,15 +12,15 @@ const Signup = () => {
                   className="img-fluid rounded mb-4"
                   loading="lazy"
                   src={image}
-                  width="200"
-                  height="100"
+                  width="60%"
+                  height="60%"
                   alt="BootstrapBrain Logo"
                 />
                 <hr className="border-primary-subtle mb-4" />
-                <h2 className="h1 mb-4">Ensuring your safety first.</h2>
-                <p className="lead mb-5">
+                <h2 className="h1 mb-4">
+                  {" "}
                   Reporting incidents made easy. Sign in here
-                </p>
+                </h2>
               </div>
             </div>
           </div>
