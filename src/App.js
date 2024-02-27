@@ -6,7 +6,7 @@ import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
-import Complaint from "./Pages/Complaint";
+import Complaint from "./Pages/complaint";
 import Incident from "./Pages/Incident";
 
 function App() {
