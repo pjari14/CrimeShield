@@ -6,7 +6,7 @@ const Cards = () => {
       <div class="container-fluid row ">
         <div class="container-fluid col-lg-3 col-sm-3">
           <div
-            class="card mx-auto my-5"
+            class="card mx-auto my-2 "
             style={{ width: "18rem", height: "15rem" }}
           >
             <div class="card-body">
@@ -25,7 +25,7 @@ const Cards = () => {
         </div>
         <div class="container-fluid col-lg-3 col-sm-3">
           <div
-            class="card mx-auto my-5"
+            class="card mx-auto my-2"
             style={{ width: "18rem", height: "15rem" }}
           >
             <div class="card-body">
@@ -43,7 +43,7 @@ const Cards = () => {
         </div>
         <div class="container-fluid col-lg-3 col-sm-3">
           <div
-            class="card mx-auto my-5"
+            class="card mx-auto my-2"
             style={{ width: "18rem", height: "15rem" }}
           >
             <div class="card-body">
@@ -61,7 +61,7 @@ const Cards = () => {
         </div>
         <div class="container-fluid col-lg-3 col-sm-3">
           <div
-            class="card mx-auto my-5"
+            class="card mx-auto my-2"
             style={{ width: "18rem", height: "15rem" }}
           >
             <div class="card-body">

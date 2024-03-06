@@ -38,23 +38,18 @@ const Navbar = () => {
               </Link>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <Link class="dropdown-item" to="/Complaint">
-                    Women/Children related chrime
+                  <Link class="dropdown-item" to="/PersonalData">
+                    Register & Track
                   </Link>
                 </li>
                 <li>
                   <Link class="dropdown-item" to="/Incident">
-                    Financial Fraud
-                  </Link>
-                </li>
-                <li>
-                  <Link class="dropdown-item" to="">
-                    Cyber Crime
+                    Report Anonymously
                   </Link>
                 </li>
               </ul>
             </li>
-            <Link className="nav-link" to="">
+            <Link className="nav-link" to="/CheckStatus">
               View FIR status
             </Link>
             <li className="nav-item dropdown">
@@ -91,7 +86,7 @@ const Navbar = () => {
                 </li>
               </ul>
             </li>
-            <Link className="nav-link" to="">
+            <Link className="nav-link" to="/contactus">
               Contact
             </Link>
             <Link className="nav-link" to="/login">
