@@ -1,16 +1,18 @@
 @font-face {
     font-family: montserrat;
     src: url(./Assets/Montserrat/Montserrat-VariableFont_wght.ttf);
+    
 }
 
 *{
     font-family: montserrat !important;
     font-weight: 600;
     
+    
 }
 
 .bg-dark{
-    background-color: #253439 !important;
+    background-color: #7F9F80 !important;
     font-size: larger;
     
 }
@@ -79,4 +81,27 @@
 }
 .btn-sm{
     width:80%;
+}
+footer{
+    width:100%;
+   
+    position: absolute;
+    left:0;
+   
+}
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+}
+.signup-img{
+border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+
+    
+}
+
+.card-registration .select-arrow {
+    top: 13px;
 }

@@ -10,6 +10,7 @@ import PersonalData from "./Pages/personaldata";
 import Incident from "./Pages/Incident";
 import CheckStatus from "./Pages/checkstatus";
 import Complaint from "./Pages/complaint";
+import Prevention from "./Pages/crimeprevention";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/Incident" element={<Incident />}></Route>
         <Route path="/contactus" element={<Contactus />}></Route>
         <Route path="/complaint" element={<Complaint />}></Route>
+        <Route path="/prevention" element={<Prevention />}></Route>
       </Routes>
       <Footer />
     </div>

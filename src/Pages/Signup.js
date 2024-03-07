@@ -1,157 +1,142 @@
 import React from "react";
-import image from "../Assets/images/Heading__1_-removebg-preview.png";
+import image from "../Assets/images/undraw_Sign_up_n6im.png";
 const Signup = () => {
   return (
-    <section className="bg-light py-5 py-md-5 py-xl-8">
-      <div className="container">
-        <div className="row gy-4 align-items-center">
-          <div className="col-12 col-md-6 col-xl-7">
-            <div className="d-flex justify-content-center text-bg-primary">
-              <div className="col-12 col-xl-9">
-                <img
-                  className="img-fluid rounded mb-4"
-                  loading="lazy"
-                  src={image}
-                  width="60%"
-                  height="60%"
-                  alt="BootstrapBrain Logo"
-                />
-                <hr className="border-primary-subtle mb-4" />
-                <h2 className="h1 mb-4">
-                  {" "}
-                  Reporting incidents made easy. Sign in here
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-md-6 col-xl-5">
-            <div className="card border-0 rounded-4">
-              <div className="card-body p-3 p-md-4 p-xl-5">
-                <div className="row">
-                  <div className="col-12">
-                    <div className="mb-4">
-                      <h3>Sign Up</h3>
-                    </div>
-                  </div>
+    <section class="h-100 ">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col">
+            <div class="card card-registration my-4">
+              <div class="row g-0">
+                <div class="col-xl-6 d-none d-xl-block">
+                  <img
+                    src={image}
+                    alt="Sample photo"
+                    class="img-fluid signup-img py-5 my-5"
+                  />
                 </div>
-                <form action="#!">
-                  <div className="row gy-3 overflow-hidden">
-                    <div className="col-12">
-                      <div className="form-floating mb-3">
-                        <input
-                          type="text"
-                          className="form-control"
-                          name="user"
-                          id="user"
-                          placeholder="Username"
-                          required
-                        />
-                        <label for="username" className="form-label">
-                          Username
-                        </label>
+                <div class="col-xl-6">
+                  <div class="card-body p-md-5 text-black">
+                    <h3 class="mb-5 text-uppercase">Register Yourself Here!</h3>
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <label class="form-label" for="form3Example1m">
+                            First name
+                          </label>
+                          <input
+                            type="text"
+                            id="form3Example1m"
+                            class="form-control form-control-lg"
+                          />
+                        </div>
                       </div>
-                    </div>
-                    <div className="col-12">
-                      <div className="form-floating mb-3">
-                        <input
-                          type="email"
-                          className="form-control"
-                          name="email"
-                          id="email"
-                          placeholder="name@example.com"
-                          required
-                        />
-                        <label for="email" className="form-label">
-                          Email
-                        </label>
-                      </div>
-                    </div>
-                    <div className="col-12">
-                      <div className="form-floating mb-3">
-                        <input
-                          type="password"
-                          className="form-control"
-                          name="password"
-                          id="password"
-                          value=""
-                          placeholder="Password"
-                          required
-                        />
-                        <label for="password" className="form-label">
-                          Password
-                        </label>
-                      </div>
-                    </div>
-                    <div className="col-12">
-                      <div className="form-floating mb-3">
-                        <select name="utype" className="form-control">
-                          <option name="Admin">Admin</option>
-                          <option name="Resident">Police</option>
-                          <option name="Police">Public</option>
-                        </select>
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <label class="form-label" for="form3Example1n">
+                            Last name
+                          </label>
+                          <input
+                            type="text"
+                            id="form3Example1n"
+                            class="form-control form-control-lg"
+                          />
+                        </div>
                       </div>
                     </div>
 
-                    <div className="col-12">
-                      <div className="d-grid">
-                        <button className="btn btn-info btn-lg" type="submit">
-                          Sign Up
-                        </button>
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <label class="form-label" for="form3Example1m1">
+                            Email-ID
+                          </label>
+                          <input
+                            type="text"
+                            id="form3Example1m1"
+                            class="form-control form-control-lg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <label class="form-label" for="form3Example1n1">
+                            Contact
+                          </label>
+                          <input
+                            type="text"
+                            id="form3Example1n1"
+                            class="form-control form-control-lg"
+                          />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </form>
 
-                <div className="row">
-                  <div className="col-12">
-                    <p className="mt-4 mb-4">Or continue with</p>
-                    <div className="d-flex gap-2 gap-sm-3 justify-content-centerX">
-                      <a
-                        href="#!"
-                        className="btn btn-outline-danger bsb-btn-circle bsb-btn-circle-2xl"
+                    <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+                      <h6 class="mb-0 me-4">Gender: </h6>
+
+                      <div class="form-check form-check-inline mb-0 me-4">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioOptions"
+                          id="femaleGender"
+                          value="option1"
+                        />
+                        <label class="form-check-label" for="femaleGender">
+                          Female
+                        </label>
+                      </div>
+
+                      <div class="form-check form-check-inline mb-0 me-4">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioOptions"
+                          id="maleGender"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="maleGender">
+                          Male
+                        </label>
+                      </div>
+
+                      <div class="form-check form-check-inline mb-0">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioOptions"
+                          id="otherGender"
+                          value="option3"
+                        />
+                        <label class="form-check-label" for="otherGender">
+                          Other
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="form3Example8">
+                        Address
+                      </label>
+                      <input
+                        type="text"
+                        id="form3Example8"
+                        class="form-control form-control-lg"
+                      />
+                    </div>
+
+                    <div class="d-flex justify-content-end pt-3">
+                      <button
+                        type="reset"
+                        class="btn btn-light btn-lg text-dark"
                       >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          fill="currentColor"
-                          className="bi bi-google"
-                          viewBox="0 0 16 16"
-                        >
-                          <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
-                        </svg>
-                      </a>
-                      <a
-                        href="#!"
-                        className="btn btn-outline-primary bsb-btn-circle bsb-btn-circle-2xl"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          fill="currentColor"
-                          className="bi bi-facebook"
-                          viewBox="0 0 16 16"
-                        >
-                          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                        </svg>
-                      </a>
-                      <a
-                        href="#!"
-                        className="btn btn-outline-dark bsb-btn-circle bsb-btn-circle-2xl"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          fill="currentColor"
-                          className="bi bi-apple"
-                          viewBox="0 0 16 16"
-                        >
-                          <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
-                          <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
-                        </svg>
-                      </a>
+                        Reset all
+                      </button>
+                      <button type="button" class="btn btn-warning btn-lg ms-2">
+                        Submit form
+                      </button>
                     </div>
                   </div>
                 </div>

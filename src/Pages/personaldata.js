@@ -11,7 +11,10 @@ const PersonalData = () => {
           <hr />
         </div>
 
-        <form class="row g-3 border border-success shadow py-4 px-4 mx-5 my-5 ">
+        <form
+          class="row g-3 border border-success shadow py-4 px-4 mx-5 my-5 "
+          style={{ backgroundColor: "" }}
+        >
           <div class="col-sm-12">
             <h2 class="text text-danger fw-3">Personal Data</h2>
           </div>
