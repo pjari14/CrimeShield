@@ -1,7 +1,28 @@
 import React from "react";
 import image from "../Assets/images/Heading__1_-removebg-preview.png";
+import { useForm } from "react-hook-form";
+import axios from "axios";
+
 import { Link } from "react-router-dom";
 const Login = () => {
+  const {
+    formState: { errors },
+    handleSubmit,
+    register,
+    reset,
+  } = useForm();
+
+  const loginUser = async (data) => {
+    try {
+      const url = "http://localhost:5000/user/login";
+      const res = await axios.post(url, data, { withCredentials: true });
+      console.log(res);
+      reset();
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <section className="bg-light py-5 py-md-5 py-xl-8">
       <div className="container">
@@ -38,7 +59,7 @@ const Login = () => {
                     </div>
                   </div>
                 </div>
-                <form action="#!">
+                <form onSubmit={handleSubmit(loginUser)}>
                   <div className="row gy-3 overflow-hidden">
                     <div className="col-12">
                       <div className="form-floating mb-3">
@@ -47,8 +68,10 @@ const Login = () => {
                           className="form-control"
                           name="email"
                           id="email"
+                          {...register("email", {
+                            required: true,
+                          })}
                           placeholder="name@example.com"
-                          required
                         />
                         <label for="email" className="form-label">
                           Email
@@ -62,29 +85,14 @@ const Login = () => {
                           className="form-control"
                           name="password"
                           id="password"
-                          value=""
+                          {...register("password", {
+                            required: true,
+                          })}
                           placeholder="Password"
                           required
                         />
                         <label for="password" className="form-label">
                           Password
-                        </label>
-                      </div>
-                    </div>
-                    <div className="col-12">
-                      <div className="form-check">
-                        <input
-                          className="form-check-input"
-                          type="checkbox"
-                          value=""
-                          name="remember_me"
-                          id="remember_me"
-                        />
-                        <label
-                          className="form-check-label text-secondary"
-                          for="remember_me"
-                        >
-                          Keep me logged in
                         </label>
                       </div>
                     </div>
