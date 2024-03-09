@@ -68,6 +68,7 @@ const Navbar = () => {
                   <Link class="dropdown-item" to="">
                     Citizen Manual
                   </Link>
+                  
                 </li>
                 <li>
                   <Link class="dropdown-item" to="/cybercrime">

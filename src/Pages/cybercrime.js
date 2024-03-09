@@ -1,6 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import image from "../Assets/images/cyber-attack-2.jpg";
+import virus from "../Assets/images/virus.jpg";
+import hack from "../Assets/images/hack.png";
+import malcode from "../Assets/images/malcode.jpg";
+import trojan from "../Assets/images/trojan.jpg";
+import theft from "../Assets/images/Identity-Theft.jpg";
+import phishing from "../Assets/images/Phishing.jpg";
+import espionage from "../Assets/images/espionage.jpg";
+import warfare from "../Assets/images/warfare.jpg";
 const Cybercrime = () => {
   return (
     <>
@@ -196,23 +204,170 @@ const Cybercrime = () => {
                     <ul>
                       <li> Network Flow Analysis</li>
                     </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <hr></hr>
-            <h2 class="title">
-              <span style={{ color: "#A4303F" }}>Cyber Threats </span>
-            </h2>{" "}
-            <hr />
-            <p
-              style={{
-                fontsize: "30px",
-                textAlign: "justify",
-                padding: "10px",
-              }}
-            ></p>
-          </div>
+                    </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    <hr></hr>
+                    <h2 class="title">
+                  <span style={{ color: "#A4303F"}}>Cyber Threats </span></h2> <hr/>
+                  <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px"
+                 
+                }}> <b>There are types of cyber attacks that have evolved over a period of time:</b></p>
+                <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                    
+                 
+                }}> <b style={{color:"red"}}><strong> ➱ Virus : </strong></b>It is a malware that self-replicates and spreads by inserting copies of itself into other executable code or documents.When the replication process is complete, this code infects the other files and programs on your system. When a computer changes the way in which it should work normally, it is said to be infected by a virus. This virus may spread from one computer to another.</p>
+                <p style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                    
+                 
+                }}><b>For example, you may receive an email with a harmful attachment, inadvertently open the file, and the computer virus then infects your machine. </b></p>
+               <img
+                  src={virus}
+                  style={{ width: "100%", height: "450px" }}
+                  class="py-3"
+                ></img> <hr></hr>
+                 <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                    
+                 
+                }}> <b style={{color:"red"}}><strong> ➱ Hacking Websites  : </strong></b> Hacking in cyber security refers to the misuse of devices like computers, smartphones, tablets, and networks to cause damage to or corrupt systems, gather information on users, steal data and documents, or disrupt data-related activity. An unauthorized access to any website belonging in a personal or professional space.</p>
+                <p style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                    
+                 
+                }}><b>For example, Morris Worm (1988), Yahoo Data Breach (2013-2014), Target Stores Data Breach (2013). SQL Injection attack is the most common website hacking technique.  </b></p>
+                <img
+                src={hack}
+                style={{width:"100%",height:"450px"}}
+                class="py-3">
+                </img> <hr></hr>
+                <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                    
+                 
+                }}> <b style={{color:"red"}}><strong> ➱ Malicious Codes  : </strong></b>  Malicious code is a kind of security threat where any code present in software tends to bring harmful effects, breach the security of the system, or bring damage to the system. It refers to any code intended to cause undesired effects within a system. It is a type of code intentionally developed to harm or exploit a computing system. </p>
+                <p style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                    
+                 
+                }}><b>Malicious code examples include backdoor attacks, scripting attacks, worms, trojan horse and spyware.</b></p>
+                <img 
+                src={malcode}
+                style={{width:"100%",height:"450px"}}
+                class="py-3"></img><hr></hr>
+                <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                    
+                 
+                }}> <b style={{color:"red"}}><strong> ➱ Trojans  : </strong></b> Trojans are deceptive programs that appear to perform one function, but in fact perform another, malicious function. They might be disguised as free software, videos or music, or seemingly legitimate advertisements. Trojans can act as standalone tools for attackers, or can be a platform for other malicious activity.  </p>
+                <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                    
+                 
+                }}><b>For example, trojan downloaders are used by attackers to deliver future payloads to a victim’s device. </b></p>
+                <img
+                src={trojan}
+                style={{width:"100%",height:"400px"}}
+                class="py-3"></img><hr></hr>
+                <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                    
+                 
+                }}> <b style={{color:"red"}}><strong> ➱ Identity Theft  : </strong></b>Identity theft is the crime of using the personal or financial information of another person to commit fraud, such as making unauthorized transactions or purchases. Identity theft is committed in many different ways and its victims are typically left with damage to their credit, finances, and reputation.</p>
+                <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                  }}><b>For example , The ChoicePoint Incident, Financial identity theft and fraud, Government documents or benefits fraud.</b></p><hr></hr>
+                <img 
+                src={theft}
+                style={{width:"100%", height:"400px"}}
+                class="py-3"></img>
+                </div><hr></hr>
+                <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                    
+                 
+                }}> <b style={{color:"red"}}><strong> ➱ Phishing  : </strong></b> Phishing is a type of social engineering and cybersecurity attack where the attacker impersonates someone else via email or other electronic communication methods, including social networks and Short Message Service ( SMS) text messages, to reveal sensitive information. 
+                Phishing attacks are the practice of sending fraudulent communications that appear to come from a reputable source. </p>
+                <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                  }}><b>For example , Estonian Cyber War, Google and Facebook Phishing Attack, Sony Pictures Hack.</b></p>
+                <img 
+                src={phishing}
+                style={{width:"100%",height:"450px"}}
+                class="py-3"></img><hr></hr>
+                 <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                  }}> <b style={{color:"red"}}><strong> ➱ Cyber Espionage  : </strong></b> Cyber espionage, or cyber spying, is a type of cyberattack in which an unauthorized user attempts to access sensitive or classified data or intellectual property (IP) for economic gain, competitive advantage or political reasons. Usually when a government’s or important organization’s privacy is posed at risk due to illegal use of computer networks to seek confidential information.</p>
+                 <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                  }}><b>For example, Social engineering, Supply Chain Attacks, Fake or Trojan Attackes.</b></p>
+                  <img 
+                  src={espionage}
+                  style={{width:"100%",height:"400px"}}
+                  class="py-3"></img><hr></hr>
+                  <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                  }}> <b style={{color:"red"}}><strong> ➱ Cyber Warfare  : </strong></b> Cyberwarfare is typically defined as a set of actions by a nation or organization to attack countries or institutions' computer network systems with the intention of disrupting, damaging, or destroying infrastructure by computer viruses or denial-of-service attacks. It is a series of strategic cyber attacks against a nation-state, causing it significant harm.</p>
+                <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                  }}><b>For example, be the use of a virus or distributed denial-of-service ( DDoS) attack to damage or infiltrate another nation's information network. </b></p>
+                <img 
+                src={warfare}
+                style={{width:"100%",height:"370px"}}
+                class="py-3"></img><hr></hr>
+                <p><b>To conclude, I hope that with the combined efforts of companies, banks and the authorities, we can see a drop in cyber-crime rates in 2024!</b></p>
         </div>
       </section>
     </>
