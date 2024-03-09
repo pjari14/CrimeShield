@@ -10,8 +10,8 @@ import PersonalData from "./Pages/personaldata";
 import Incident from "./Pages/Incident";
 import CheckStatus from "./Pages/checkstatus";
 import Complaint from "./Pages/complaint";
-import Prevention from "./Pages/crimeprevention";
 import Cybersafety from "./Pages/cybersafety";
+import Cybercrime from "./Pages/cybercrime";
 
 function App() {
   return (
@@ -26,8 +26,8 @@ function App() {
         <Route path="/Incident" element={<Incident />}></Route>
         <Route path="/contactus" element={<Contactus />}></Route>
         <Route path="/complaint" element={<Complaint />}></Route>
-        <Route path="/prevention" element={<Prevention />}></Route>
         <Route path="/cybersafety" element={<Cybersafety />}></Route>
+        <Route path="/cybercrime" element={< Cybercrime />}></Route>
       </Routes>
       <Footer />
     </div>
