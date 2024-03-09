@@ -176,7 +176,7 @@ const Complaint = () => {
           <div class="col-4 text-end"></div>
         </form>
         <div class="container py-3 text-center ">
-          <h2>IPC sections according to crime type</h2>
+          <h2>IPC sections</h2>
           {selectedCrime && renderCrimeDetails()}
         </div>
       </div>
