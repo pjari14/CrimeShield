@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 const PersonalData = () => {
   return (
     <>
@@ -11,10 +12,7 @@ const PersonalData = () => {
           <hr />
         </div>
 
-        <form
-          class="row g-3 border border-success shadow py-4 px-4 mx-5 my-5 "
-          style={{ backgroundColor: "" }}
-        >
+        <form class="row g-3 shadow py-4 px-4 mx-5 my-5 " id="personaldata">
           <div class="col-sm-12">
             <h2 class="text text-danger fw-3">Personal Data</h2>
           </div>
@@ -63,6 +61,23 @@ const PersonalData = () => {
               id="inputPassword4"
               placeholder="Contact Number"
             />
+          </div>
+
+          <div class="col-md-6">
+            <label for="Identityproof" class="form-label">
+              Identity Proof
+            </label>
+            <input
+              type="file"
+              class="form-control"
+              id="identityproof"
+              placeholder="Upload here"
+            />
+          </div>
+          <div class="col-md-6 ">
+            <h6 style={{ marginTop: "40px" }}>
+              Adharcard/ Driving License/ PAN Card
+            </h6>
           </div>
           <div class="col-12">
             <label for="inputAddress" class="form-label">

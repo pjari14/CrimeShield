@@ -39,7 +39,7 @@ const Home = () => {
 
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src={homebg} alt="..." class="d-block w-100" />
+            <img src={homebg} alt="..." class="d-block w-100 img-responsive" />
           </div>
           <div class="carousel-item">
             <img src={homebg2} alt="..." class="d-block w-100" />
@@ -66,13 +66,14 @@ const Home = () => {
           <span class="carousel-control-next-icon"></span>
         </button>
       </div>
+
       <OnlineComplaint />
       <Services />
 
       <div class="page-section" id="resources">
         <div class="container p-4 d-flex flex-column justify-content-center align-items-center">
           <div class="text-center" style={{ width: "100%" }}>
-            <h2 class="section-heading text-uppercase p-5 mx-0 my-4 text-dark">
+            <h2 class="section-heading text-uppercase p-3 mx-0 my-4 text-dark">
               Resources
             </h2>
           </div>

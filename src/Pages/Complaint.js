@@ -1,6 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { CCContent, ABContent, FTContent } from "../Components/crimecomponent";
+const crimeTypes = [
+  { id: "CC", label: "Cyber Crime" },
+  { id: "AB", label: "Abuse" },
+  { id: "FT", label: "Fraud" },
+];
+
+const crimeDetails = {
+  CC: {
+    title: "Cyber Crime",
+    component: CCContent,
+  },
+  AB: {
+    title: "Abuse Details",
+    component: ABContent,
+  },
+  FT: {
+    title: "Fraud Details",
+    component: FTContent,
+  },
+};
+
 const Complaint = () => {
+  const [selectedCrime, setSelectedCrime] = useState(null);
+
+  const handleCrimeChange = (e) => {
+    setSelectedCrime(e.target.value);
+  };
+
+  const renderCrimeDetails = () => {
+    const CrimeDetailComponent = crimeDetails[selectedCrime].component;
+    return CrimeDetailComponent ? <CrimeDetailComponent /> : null;
+  };
+
   return (
     <>
       <div class="container mt-2 pt-2">
@@ -11,7 +44,7 @@ const Complaint = () => {
           <hr />
         </div>
 
-        <form class="row g-3 border border-success shadow py-4 px-4 mx-5 my-5 ">
+        <form class="row g-3  shadow py-4 px-4 mx-5 my-5 " id="complaint">
           <div class="col-sm-12">
             <h2 class="text text-danger fw-3">Incident Details</h2>
           </div>
@@ -47,25 +80,20 @@ const Complaint = () => {
           <div class="col-md-6">
             <label class="form-label">Select Crime Type:</label>
 
-            <select class="form-select" id="ctype" name="crimeType">
-              <option value="select crime" default>
-                Select Crime
-              </option>
-              <option value="Robbery" name="crimeType">
-                Robbery
-              </option>
-              <option value="Financial Fraud" name="crimeType">
-                Financial Fraud
-              </option>
-              <option value="Kidnapping" name="crimeType">
-                Kidnapping
-              </option>
-              <option value="Assault" name="crimeType">
-                Assault
-              </option>
-              <option value="Other type" name="crimeType">
-                Other type
-              </option>
+            <select
+              class="form-select"
+              id="ctype"
+              name="crimeType"
+              value={selectedCrime}
+              onChange={handleCrimeChange}
+            >
+              {" "}
+              <option value="">Select a crime type</option>
+              {crimeTypes.map((crime) => (
+                <option key={crime.id} value={crime.id}>
+                  {crime.label}
+                </option>
+              ))}
             </select>
           </div>
 
@@ -131,6 +159,10 @@ const Complaint = () => {
           </div>
           <div class="col-4 text-end"></div>
         </form>
+        <div class="container py-3 text-center ">
+          <h2>IPC sections according to crime type</h2>
+          {renderCrimeDetails()}
+        </div>
       </div>
     </>
   );

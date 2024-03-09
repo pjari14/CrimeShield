@@ -30,16 +30,11 @@ const Login = () => {
           <div className="col-12 col-md-6 col-xl-7">
             <div className="d-flex justify-content-center text-bg-primary">
               <div className="col-12 col-xl-9">
-                <img
-                  className="img-fluid rounded mb-4"
-                  loading="lazy"
-                  src={image}
-                  width="60%"
-                  height="60%"
-                  alt="BootstrapBrain Logo"
-                />
+                <h1 class="heading" style={{ color: "#BA68C8" }}>
+                  WELCOME!
+                </h1>
                 <hr className="border-primary-subtle mb-4" />
-                <h2 className="h1 mb-4">
+                <h2 className=" mb-4 text-info">
                   Reporting incidents made easy. Sign in here
                 </h2>
                 <p className="lead mb-5"></p>
@@ -98,7 +93,10 @@ const Login = () => {
                     </div>
                     <div className="col-12">
                       <div className="d-grid">
-                        <button className="btn btn-info btn-lg" type="submit">
+                        <button
+                          className="btn btn-warning btn-gradient btn-lg"
+                          type="submit"
+                        >
                           Log in now
                         </button>
                       </div>
