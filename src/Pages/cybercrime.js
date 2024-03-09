@@ -5,6 +5,10 @@ import virus from "../Assets/images/virus.jpg";
 import hack from "../Assets/images/hack.png";
 import malcode from "../Assets/images/malcode.jpg";
 import trojan from "../Assets/images/trojan.jpg";
+import theft from "../Assets/images/Identity-Theft.jpg";
+import phishing from "../Assets/images/Phishing.jpg";
+import espionage from "../Assets/images/espionage.jpg";
+import warfare from "../Assets/images/warfare.jpg";
 const Cybercrime = () => {
   return (
     <>
@@ -291,7 +295,8 @@ const Cybercrime = () => {
                 }}><b>For example, trojan downloaders are used by attackers to deliver future payloads to a victim’s device. </b></p>
                 <img
                 src={trojan}
-                style={{width:"100%",height:"400px"}}></img><hr></hr>
+                style={{width:"100%",height:"400px"}}
+                class="py-3"></img><hr></hr>
                 <p
                 style={{
                     fontsize: "30px",
@@ -305,8 +310,64 @@ const Cybercrime = () => {
                     fontsize: "30px",
                     textAlign:"justify",
                     padding:"10px",
-                  }}><b>For example , The ChoicePoint Incident, Financial identity theft and fraud, Government documents or benefits fraud</b></p><hr></hr>
-                </div>
+                  }}><b>For example , The ChoicePoint Incident, Financial identity theft and fraud, Government documents or benefits fraud.</b></p><hr></hr>
+                <img 
+                src={theft}
+                style={{width:"100%", height:"400px"}}
+                class="py-3"></img>
+                </div><hr></hr>
+                <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                    
+                 
+                }}> <b style={{color:"red"}}><strong> ➱ Phishing  : </strong></b> Phishing is a type of social engineering and cybersecurity attack where the attacker impersonates someone else via email or other electronic communication methods, including social networks and Short Message Service ( SMS) text messages, to reveal sensitive information. 
+                Phishing attacks are the practice of sending fraudulent communications that appear to come from a reputable source. </p>
+                <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                  }}><b>For example , Estonian Cyber War, Google and Facebook Phishing Attack, Sony Pictures Hack.</b></p>
+                <img 
+                src={phishing}
+                style={{width:"100%",height:"450px"}}
+                class="py-3"></img><hr></hr>
+                 <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                  }}> <b style={{color:"red"}}><strong> ➱ Cyber Espionage  : </strong></b> Cyber espionage, or cyber spying, is a type of cyberattack in which an unauthorized user attempts to access sensitive or classified data or intellectual property (IP) for economic gain, competitive advantage or political reasons. Usually when a government’s or important organization’s privacy is posed at risk due to illegal use of computer networks to seek confidential information.</p>
+                 <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                  }}><b>For example, Social engineering, Supply Chain Attacks, Fake or Trojan Attackes.</b></p>
+                  <img 
+                  src={espionage}
+                  style={{width:"100%",height:"400px"}}
+                  class="py-3"></img><hr></hr>
+                  <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                  }}> <b style={{color:"red"}}><strong> ➱ Cyber Warfare  : </strong></b> Cyberwarfare is typically defined as a set of actions by a nation or organization to attack countries or institutions' computer network systems with the intention of disrupting, damaging, or destroying infrastructure by computer viruses or denial-of-service attacks. It is a series of strategic cyber attacks against a nation-state, causing it significant harm.</p>
+                <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                  }}><b>For example, be the use of a virus or distributed denial-of-service ( DDoS) attack to damage or infiltrate another nation's information network. </b></p>
+                <img 
+                src={warfare}
+                style={{width:"100%",height:"370px"}}
+                class="py-3"></img><hr></hr>
+                <p><b>To conclude, I hope that with the combined efforts of companies, banks and the authorities, we can see a drop in cyber-crime rates in 2024!</b></p>
         </div>
       </section>
     </>
