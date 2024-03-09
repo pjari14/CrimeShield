@@ -66,6 +66,11 @@ const Navbar = () => {
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
                   <Link class="dropdown-item" to="">
+                    Citizen Manual
+                  </Link>
+                </li>
+                <li>
+                  <Link class="dropdown-item" to="">
                     Cyber Crime
                   </Link>
                 </li>
@@ -81,6 +86,9 @@ const Navbar = () => {
                 </li>
               </ul>
             </li>
+            <Link className="nav-link" to="/lawyer">
+              Lawyer
+            </Link>
             <Link className="nav-link" to="/contactus">
               Contact
             </Link>

@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../Assets/images/undraw_Sign_up_n6im.png";
+import image from "../Assets/images/Sign up-pana (1).png";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 
@@ -31,7 +31,7 @@ const Signup = () => {
     }
   };
   return (
-    <section class="h-100 ">
+    <section class="h-100 bg-light ">
       <form onSubmit={handleSubmit(signupUser)}>
         <div class="container py-5 h-100">
           <div class="row d-flex justify-content-center align-items-center h-100">
@@ -42,15 +42,19 @@ const Signup = () => {
                     <img
                       src={image}
                       alt="Sample photo"
-                      class="img-fluid signup-img py-5 my-5"
+                      class="img-fluid signup-img py-5 "
+                      style={{ height: "100%" }}
                     />
                   </div>
 
                   <div class="col-xl-6">
-                    <div class="card-body p-md-5 text-black">
-                      <h3 class="mb-5 text-uppercase">
+                    <div class="card-body p-md-5 my-5">
+                      <h2
+                        class="mb-5 text-uppercase"
+                        style={{ color: "#BA68C8", fontWeight: "bold" }}
+                      >
                         Register Yourself Here!
-                      </h3>
+                      </h2>
 
                       <div class="row">
                         <div class="col-md-6 mb-4">
@@ -151,7 +155,8 @@ const Signup = () => {
                       <div class="d-flex justify-content-end pt-3">
                         <button
                           type="reset"
-                          class="btn btn-light btn-lg text-dark"
+                          class="btn text-light btn-lg "
+                          style={{ backgroundColor: "#BA68C8" }}
                         >
                           Reset all
                         </button>

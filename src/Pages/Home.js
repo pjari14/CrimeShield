@@ -39,7 +39,7 @@ const Home = () => {
 
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src={homebg} alt="..." class="d-block w-100" />
+            <img src={homebg} alt="..." class="d-block w-100 img-responsive" />
           </div>
           <div class="carousel-item">
             <img src={homebg2} alt="..." class="d-block w-100" />
@@ -66,6 +66,7 @@ const Home = () => {
           <span class="carousel-control-next-icon"></span>
         </button>
       </div>
+
       <OnlineComplaint />
       <Services />
 

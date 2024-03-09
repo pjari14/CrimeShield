@@ -9,7 +9,10 @@ const CheckStatus = () => {
             <h2 class="text-danger">Track your complaint status</h2> <hr />
           </div>
 
-          <form class="row g-3 shadow border border-info py-5 px-4 mx-1 my-4 ">
+          <form
+            class="row g-3 shadow border border-info py-5 px-4 mx-1 my-4 "
+            id="checkstatus"
+          >
             <div class="row py-4 px-3">
               <div class="col-sm-4">
                 <label for="inputName" class="form-label mx-3">
@@ -29,27 +32,6 @@ const CheckStatus = () => {
                 <Link to="" class="btn btn-sm btn-warning  py-2 px-3 mx-2">
                   Search
                 </Link>
-              </div>
-            </div>
-            <div class="row py-3 ">
-              <div class="col-sm-4"></div>
-              <div class="col-sm-4">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputName"
-                  placeholder="Enter OTP here"
-                  required
-                />
-              </div>
-              <div class="col-sm-4">
-                <button
-                  to=""
-                  type="submit"
-                  class="btn btn-sm btn-success py-2 px-3 mx-2"
-                >
-                  Submit
-                </button>
               </div>
             </div>
           </form>

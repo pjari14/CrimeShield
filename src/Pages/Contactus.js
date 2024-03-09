@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import image from "../Assets/images/Contact2.jpg";
+
 const contactus = () => {
   return (
     <>
@@ -15,7 +16,7 @@ const contactus = () => {
             alt="Contact us"
           />
         </div>
-        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+        <form id="contactForm">
           <div class="mb-3">
             <label class="form-label" for="name">
               Name
@@ -62,7 +63,7 @@ const contactus = () => {
 
           <div class="d-grid">
             <button
-              class="btn btn-primary btn-lg "
+              class="btn btn-warning btn-lg "
               id="submitButton"
               type="submit"
             >
@@ -71,8 +72,6 @@ const contactus = () => {
           </div>
         </form>
       </div>
-
-      <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <div class="container my-5 text-light w-100">
+    <div class="container my-5   text-light w-100">
       <footer class="text-center text-light bg-dark w-100">
         <div class="container">
           <section class="mt-5">
@@ -41,7 +41,7 @@ const Footer = () => {
 
               <div class="col-md-2">
                 <h6 class="text-uppercase font-weight-bold">
-                  <a href="#!" class="text-light">
+                  <a href="/contactus" class="text-light">
                     Contact
                   </a>
                 </h6>

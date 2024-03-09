@@ -5,11 +5,8 @@ const Cards = () => {
     <>
       <div class="container-fluid row ">
         <div class="container-fluid col-lg-3 col-sm-3">
-          <div
-            class="card mx-auto my-2 "
-            style={{ width: "18rem", height: "15rem" }}
-          >
-            <div class="card-body">
+          <div class="card mx-auto my-2 h-100 " style={{ width: "18rem" }}>
+            <div class="card-body ">
               <h5 class="card-title">Cyber Safety Tips</h5>
 
               <p class="card-text">
@@ -17,17 +14,16 @@ const Cards = () => {
                 cyber safety rules. They’ll help protect you and your family
                 from threats that could harm your data and devices.
               </p>
-              <Link to="#" class="btn btn-sm btn-danger">
+            </div>
+            <div class="card-footer">
+              <Link to="/cybersafety" class="btn btn-lg w-100 btn-danger">
                 Read More
               </Link>
             </div>
           </div>
         </div>
         <div class="container-fluid col-lg-3 col-sm-3">
-          <div
-            class="card mx-auto my-2"
-            style={{ width: "18rem", height: "15rem" }}
-          >
+          <div class="card mx-auto my-2 h-100" style={{ width: "18rem" }}>
             <div class="card-body">
               <h5 class="card-title">Cyber Awareness</h5>
 
@@ -35,17 +31,16 @@ const Cards = () => {
                 Cyber awareness is about understanding the risks and knowing how
                 to protect yourself and others from cyber threats.
               </p>
-              <Link to="#" class="btn btn-sm btn-danger">
+            </div>
+            <div class="card-footer ">
+              <Link to="#" class="btn btn-lg w-100 btn-danger">
                 Read More
               </Link>
             </div>
           </div>
         </div>
         <div class="container-fluid col-lg-3 col-sm-3">
-          <div
-            class="card mx-auto my-2"
-            style={{ width: "18rem", height: "15rem" }}
-          >
+          <div class="card mx-auto my-2 h-100" style={{ width: "18rem" }}>
             <div class="card-body">
               <h5 class="card-title">Citizen Manual</h5>
 
@@ -53,17 +48,16 @@ const Cards = () => {
                 Step by step guide for citizens to report crime and keep track
                 on them online.
               </p>
-              <Link to="#" class="btn btn-sm btn-danger">
+            </div>
+            <div class="card-footer">
+              <Link to="#" class="btn btn-lg w-100 btn-danger">
                 Read More
               </Link>
             </div>
           </div>
         </div>
         <div class="container-fluid col-lg-3 col-sm-3">
-          <div
-            class="card mx-auto my-2"
-            style={{ width: "18rem", height: "15rem" }}
-          >
+          <div class="card mx-auto my-2 h-100" style={{ width: "18rem" }}>
             <div class="card-body">
               <h5 class="card-title">Media/Gallery</h5>
               <h6 class="card-subtitle mb-2">
@@ -71,7 +65,9 @@ const Cards = () => {
                 Know more about current crimes,helpline noumbers for safety.
               </h6>
               <p class="card-text"></p>
-              <Link to="#" class="btn btn-sm btn-danger">
+            </div>
+            <div class="card-footer">
+              <Link to="#" class="btn btn-lg w-100 btn-danger">
                 Read More
               </Link>
             </div>

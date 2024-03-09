@@ -11,7 +11,7 @@ const Complaint = () => {
           <hr />
         </div>
 
-        <form class="row g-3 border border-success shadow py-4 px-4 mx-5 my-5 ">
+        <form class="row g-3  shadow py-4 px-4 mx-5 my-5 " id="complaint">
           <div class="col-sm-12">
             <h2 class="text text-danger fw-3">Incident Details</h2>
           </div>

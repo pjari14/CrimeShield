@@ -9,7 +9,7 @@
 }
 
 .bg-dark {
-  background-color: #7f9f80 !important;
+  background-color: #2193b0 !important;
   font-size: larger;
 }
 
@@ -104,4 +104,17 @@ b {
 }
 .title {
   color: #407cc0;
+}
+#checkstatus,
+#personaldata,
+#complaint {
+  background-color: #f8f8ff;
+}
+
+.card-body {
+  flex-grow: 1;
+}
+.card-footer {
+  padding: 5%;
+  background-color: #fdebeb;
 }

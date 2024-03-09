@@ -12,6 +12,7 @@ import CheckStatus from "./Pages/checkstatus";
 import Complaint from "./Pages/complaint";
 import Prevention from "./Pages/crimeprevention";
 import Cybersafety from "./Pages/cybersafety";
+import Lawyer from "./Pages/Lawyer";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/complaint" element={<Complaint />}></Route>
         <Route path="/prevention" element={<Prevention />}></Route>
         <Route path="/cybersafety" element={<Cybersafety />}></Route>
+        <Route path="/lawyer" element={<Lawyer />}></Route>
       </Routes>
       <Footer />
     </div>
