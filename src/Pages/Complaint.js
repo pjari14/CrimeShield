@@ -1,10 +1,18 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { CCContent, ABContent, FTContent } from "../Components/crimecomponent";
+import {
+  CCContent,
+  DVContent,
+  RBContent,
+  THContent,
+  ABContent,
+} from "../Components/crimecomponent";
 const crimeTypes = [
   { id: "CC", label: "Cyber Crime" },
+  { id: "DV", label: "Domestic Violence" },
   { id: "AB", label: "Abuse" },
-  { id: "FT", label: "Fraud" },
+  { id: "TH", label: "Theft" },
+  { id: "RB", label: "Robbery" },
 ];
 
 const crimeDetails = {
@@ -12,13 +20,21 @@ const crimeDetails = {
     title: "Cyber Crime",
     component: CCContent,
   },
+  DV: {
+    title: "Domestic Violence",
+    component: DVContent,
+  },
   AB: {
-    title: "Abuse Details",
+    title: "Abuse",
     component: ABContent,
   },
-  FT: {
-    title: "Fraud Details",
-    component: FTContent,
+  TH: {
+    title: "Theft",
+    component: THContent,
+  },
+  RB: {
+    title: "Robbery",
+    component: RBContent,
   },
 };
 

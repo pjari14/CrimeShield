@@ -118,3 +118,7 @@ b {
   padding: 5%;
   background-color: #fdebeb;
 }
+
+td {
+  text-align: justify;
+}
