@@ -65,17 +65,12 @@ const Navbar = () => {
               </Link>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <Link class="dropdown-item" to="/Prevention">
-                    Crime Prevention
-                  </Link>
-                </li>
-                <li>
                   <Link class="dropdown-item" to="">
                     Cyber Crime
                   </Link>
                 </li>
                 <li>
-                  <Link class="dropdown-item" to="">
+                  <Link class="dropdown-item" to="/cybersafety">
                     Safety tips
                   </Link>
                 </li>
