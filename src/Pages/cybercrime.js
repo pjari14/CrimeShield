@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import image from "../Assets/images/cyber-attack-2.jpg"
+import image from "../Assets/images/cyber-attack-2.jpg";
+import virus from "../Assets/images/virus.jpg";
+import hack from "../Assets/images/hack.png";
+import malcode from "../Assets/images/malcode.jpg";
+import trojan from "../Assets/images/trojan.jpg";
 const cybercrime = () => {
     return (
         <>
@@ -138,20 +142,111 @@ const cybercrime = () => {
                     </ul>
                     </td>
                     </tr>
-
                     </tbody>
                     </table>
                     <hr></hr>
                     <h2 class="title">
-                  <span style={{ color: "#A4303F"}}>Cyber Threats </span></h2> <hr />
+                  <span style={{ color: "#A4303F"}}>Cyber Threats </span></h2> <hr/>
                   <p
                 style={{
                     fontsize: "30px",
                     textAlign:"justify",
                     padding:"10px"
                  
-                }}></p>
-            </div>
+                }}> <b>There are types of cyber attacks that have evolved over a period of time:</b></p>
+                <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                    
+                 
+                }}> <b style={{color:"red"}}><strong> ➱ Virus : </strong></b>It is a malware that self-replicates and spreads by inserting copies of itself into other executable code or documents.When the replication process is complete, this code infects the other files and programs on your system. When a computer changes the way in which it should work normally, it is said to be infected by a virus. This virus may spread from one computer to another.</p>
+                <p style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                    
+                 
+                }}><b>For example, you may receive an email with a harmful attachment, inadvertently open the file, and the computer virus then infects your machine. </b></p>
+               <img
+                  src={virus}
+                  style={{ width: "100%", height: "450px" }}
+                  class="py-3"
+                ></img> <hr></hr>
+                 <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                    
+                 
+                }}> <b style={{color:"red"}}><strong> ➱ Hacking Websites  : </strong></b> Hacking in cyber security refers to the misuse of devices like computers, smartphones, tablets, and networks to cause damage to or corrupt systems, gather information on users, steal data and documents, or disrupt data-related activity. An unauthorized access to any website belonging in a personal or professional space.</p>
+                <p style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                    
+                 
+                }}><b>For example, Morris Worm (1988), Yahoo Data Breach (2013-2014), Target Stores Data Breach (2013). SQL Injection attack is the most common website hacking technique.  </b></p>
+                <img
+                src={hack}
+                style={{width:"100%",height:"450px"}}
+                class="py-3">
+                </img> <hr></hr>
+                <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                    
+                 
+                }}> <b style={{color:"red"}}><strong> ➱ Malicious Codes  : </strong></b>  Malicious code is a kind of security threat where any code present in software tends to bring harmful effects, breach the security of the system, or bring damage to the system. It refers to any code intended to cause undesired effects within a system. It is a type of code intentionally developed to harm or exploit a computing system. </p>
+                <p style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                    
+                 
+                }}><b>Malicious code examples include backdoor attacks, scripting attacks, worms, trojan horse and spyware.</b></p>
+                <img 
+                src={malcode}
+                style={{width:"100%",height:"450px"}}
+                class="py-3"></img><hr></hr>
+                <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                    
+                 
+                }}> <b style={{color:"red"}}><strong> ➱ Trojans  : </strong></b> Trojans are deceptive programs that appear to perform one function, but in fact perform another, malicious function. They might be disguised as free software, videos or music, or seemingly legitimate advertisements. Trojans can act as standalone tools for attackers, or can be a platform for other malicious activity.  </p>
+                <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                    
+                 
+                }}><b>For example, trojan downloaders are used by attackers to deliver future payloads to a victim’s device. </b></p>
+                <img
+                src={trojan}
+                style={{width:"100%",height:"400px"}}></img><hr></hr>
+                <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                    
+                 
+                }}> <b style={{color:"red"}}><strong> ➱ Identity Theft  : </strong></b>Identity theft is the crime of using the personal or financial information of another person to commit fraud, such as making unauthorized transactions or purchases. Identity theft is committed in many different ways and its victims are typically left with damage to their credit, finances, and reputation.</p>
+                <p
+                style={{
+                    fontsize: "30px",
+                    textAlign:"justify",
+                    padding:"10px",
+                  }}><b>For example , The ChoicePoint Incident, Financial identity theft and fraud, Government documents or benefits fraud</b></p><hr></hr>
+                </div>
         </div>
        </section>
         

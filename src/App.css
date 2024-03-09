@@ -105,7 +105,6 @@ b {
 .title {
   color: #407cc0;
 }
-<<<<<<< HEAD
 
 .crime{
     background-color: 'orange';
@@ -113,7 +112,7 @@ b {
           height: 100px;
 
 }
-=======
+
 #checkstatus,
 #personaldata,
 #complaint {
@@ -127,4 +126,4 @@ b {
   padding: 5%;
   background-color: #fdebeb;
 }
->>>>>>> c3cea299364aeb20350725ffa1849a734b332144
+
