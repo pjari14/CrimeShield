@@ -16,7 +16,11 @@ const Cards = () => {
               </p>
             </div>
             <div class="card-footer">
-              <Link to="/cybersafety" class="btn btn-lg w-100 btn-danger">
+              <Link
+                to="/cybersafety"
+                class="btn btn-lg w-100 "
+                style={{ backgroundColor: "#BA68C8" }}
+              >
                 Read More
               </Link>
             </div>
@@ -33,7 +37,11 @@ const Cards = () => {
               </p>
             </div>
             <div class="card-footer ">
-              <Link to="#" class="btn btn-lg w-100 btn-danger">
+              <Link
+                to="#"
+                class="btn btn-lg w-100 "
+                style={{ backgroundColor: "#BA68C8" }}
+              >
                 Read More
               </Link>
             </div>
@@ -50,7 +58,11 @@ const Cards = () => {
               </p>
             </div>
             <div class="card-footer">
-              <Link to="#" class="btn btn-lg w-100 btn-danger">
+              <Link
+                to="#"
+                class="btn btn-lg w-100 "
+                style={{ backgroundColor: "#BA68C8" }}
+              >
                 Read More
               </Link>
             </div>
@@ -67,7 +79,11 @@ const Cards = () => {
               <p class="card-text"></p>
             </div>
             <div class="card-footer">
-              <Link to="#" class="btn btn-lg w-100 btn-danger">
+              <Link
+                to="#"
+                class="btn btn-lg w-100 "
+                style={{ backgroundColor: "#BA68C8" }}
+              >
                 Read More
               </Link>
             </div>

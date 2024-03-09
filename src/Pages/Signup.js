@@ -164,8 +164,19 @@ const Signup = () => {
                           type="submit"
                           class="btn btn-warning btn-lg ms-2"
                         >
-                          Submit form
+                          Register
                         </button>
+                      </div>
+                      <hr />
+                      <div class="container justify-content-center  align-items-cente ">
+                        <h3>Have you registered already?</h3>
+                        <Link
+                          to="/login"
+                          class="btn btn-dark"
+                          style={{ marginTop: "-80px", marginLeft: "420px" }}
+                        >
+                          Login now
+                        </Link>
                       </div>
                     </div>
                   </div>

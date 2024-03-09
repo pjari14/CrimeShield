@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../Assets/images/Lawyer-rafiki.png";
+import Selectoption from "../Components/selectoption";
 const lawyer = () => {
   return (
     <>
@@ -66,6 +67,7 @@ const lawyer = () => {
           </div>
         </div>
       </section>
+      <Selectoption />
     </>
   );
 };
