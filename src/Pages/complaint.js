@@ -161,7 +161,7 @@ const Complaint = () => {
         </form>
         <div class="container py-3 text-center ">
           <h2>IPC sections according to crime type</h2>
-          {renderCrimeDetails()}
+          {selectedCrime && renderCrimeDetails()}
         </div>
       </div>
     </>
