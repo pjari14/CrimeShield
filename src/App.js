@@ -9,10 +9,12 @@ import Signup from "./Pages/Signup";
 import PersonalData from "./Pages/personaldata";
 import Incident from "./Pages/Incident";
 import CheckStatus from "./Pages/checkstatus";
-import Complaint from "./Pages/complaint";
+import Complaint from "./Pages/Complaint";
 import Cybersafety from "./Pages/cybersafety";
 import Lawyer from "./Pages/Lawyer";
 import Cybercrime from "./Pages/cybercrime";
+import Citizenmanual from "./Pages/citizenmanual";
+import Gallery from "./Pages/gallery";
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
         <Route path="/cybersafety" element={<Cybersafety />}></Route>
         <Route path="/lawyer" element={<Lawyer />}></Route>
         <Route path="/cybercrime" element={<Cybercrime />}></Route>
+        <Route path="/citizenmanual" element={<Citizenmanual />}></Route>
+        <Route path="/gallery" element={<Gallery />}></Route>
       </Routes>
       <Footer />
     </div>
