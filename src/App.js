@@ -13,6 +13,8 @@ import Complaint from "./Pages/complaint";
 import Cybersafety from "./Pages/cybersafety";
 import Lawyer from "./Pages/Lawyer";
 import Cybercrime from "./Pages/cybercrime";
+import Citizenmanual from "./Pages/citizenmanual";
+import Gallery from "./Pages/gallery";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { fetchUser } from "./ReduxStore/Userslice/Userslice";
@@ -37,6 +39,8 @@ function App() {
         <Route path="/cybersafety" element={<Cybersafety />}></Route>
         <Route path="/lawyer" element={<Lawyer />}></Route>
         <Route path="/cybercrime" element={<Cybercrime />}></Route>
+        <Route path="/citizenmanual" element={<Citizenmanual />}></Route>
+        <Route path="/gallery" element={<Gallery />}></Route>
       </Routes>
       <Footer />
     </div>
