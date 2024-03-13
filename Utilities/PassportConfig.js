@@ -1,7 +1,7 @@
 const passport = require("passport");
-const { GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET } = process.env;
+// const { GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET } = process.env;
 const LocalStrategy = require("passport-local").Strategy;
-const GoogleStrategy = require("passport-google-oauth20").Strategy;
+// const GoogleStrategy = require("passport-google-oauth20").Strategy;
 const User = require("../Models/UserModel");
 const bcrypt = require("bcrypt");
 
