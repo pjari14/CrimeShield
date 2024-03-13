@@ -13,8 +13,15 @@ import Complaint from "./Pages/complaint";
 import Cybersafety from "./Pages/cybersafety";
 import Lawyer from "./Pages/Lawyer";
 import Cybercrime from "./Pages/cybercrime";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { fetchUser } from "./ReduxStore/Userslice/Userslice";
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchUser());
+  }, []);
   return (
     <div>
       <Navbar />

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import image from "../Assets/images/5f2a24746eeb281f855a2673_cyber-hygiene.jpg";
 import parents from "../Assets/images/cprotect_child_cybercrime.png";
 import org from "../Assets/images/cyber-security-protection-firewall-interface-concept.jpg";
@@ -8,7 +8,7 @@ const cybersafety = () => {
   return (
     <>
       <section class="cybersafetytips">
-        <img class="" src={image} style={{ width: "100%" }}></img>
+        <img class="" alt="" src={image} style={{ width: "100%" }}></img>
         <div class="container">
           <div class="post" style={{ textalign: "justify" }}>
             <div class="header">
@@ -52,6 +52,7 @@ const cybersafety = () => {
                 </h2>
                 <hr />
                 <img
+                  alt=""
                   src={parents}
                   style={{ width: "100%", height: "650px" }}
                   class="py-3"
@@ -178,6 +179,7 @@ const cybersafety = () => {
                   </span>
                 </h2>
                 <img
+                  alt=""
                   src={teens}
                   style={{ width: "100%", height: "650px" }}
                   class="py-3"
@@ -519,6 +521,7 @@ const cybersafety = () => {
                 </h2>
                 <hr />
                 <img
+                  alt=""
                   src={org}
                   style={{ width: "100%", height: "650px" }}
                   class="py-3"

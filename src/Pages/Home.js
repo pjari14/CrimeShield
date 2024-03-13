@@ -1,14 +1,13 @@
 import React from "react";
 import Services from "../Components/services";
-import image from "../Assets/images/CyberIris__4_-removebg-preview.png";
+
 import OnlineComplaint from "../Components/OnlineComplaint";
 
-import { Link } from "react-router-dom";
 import homebg from "../Assets/images/Homebg2.jpeg";
 import homebg2 from "../Assets/images/cybercrime.png";
 import homebg3 from "../Assets/images/Scams.jpeg";
 import Cards from "../Components/Cards";
-import resources from "../Assets/icons/resources.png";
+
 const Home = () => {
   return (
     <div>

@@ -41,7 +41,7 @@ const Signup = () => {
                   <div class="col-xl-6 d-none d-xl-block">
                     <img
                       src={image}
-                      alt="Sample photo"
+                      alt="Sample"
                       class="img-fluid signup-img py-5 "
                       style={{ height: "100%" }}
                     />
@@ -169,7 +169,7 @@ const Signup = () => {
                       </div>
                       <hr />
                       <div class="container justify-content-center  align-items-cente ">
-                        <h3>Have you registered already?</h3>
+                        <h3>Already have an account?</h3>
                         <Link
                           to="/login"
                           class="btn btn-dark"

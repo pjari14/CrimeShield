@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import image from "../Assets/images/cyber-attack-2.jpg";
 import virus from "../Assets/images/virus.jpg";
 import hack from "../Assets/images/hack.png";
@@ -14,7 +14,7 @@ const Cybercrime = () => {
     <>
       <section class="cybercrimes">
         <div style={{ textAlign: "center" }}>
-          <img class="" src={image} style={{ width: "100%" }}></img>
+          <img class="" alt="" src={image} style={{ width: "100%" }}></img>
         </div>
         <div class="container">
           <div class="post" style={{ textalign: "justify" }}>
@@ -258,6 +258,7 @@ const Cybercrime = () => {
               </b>
             </p>
             <img
+              alt=""
               src={virus}
               style={{ width: "100%", height: "450px" }}
               class="py-3"
@@ -295,6 +296,7 @@ const Cybercrime = () => {
               </b>
             </p>
             <img
+              alt=""
               src={hack}
               style={{ width: "100%", height: "450px" }}
               class="py-3"
@@ -331,6 +333,7 @@ const Cybercrime = () => {
               </b>
             </p>
             <img
+              alt=""
               src={malcode}
               style={{ width: "100%", height: "450px" }}
               class="py-3"
@@ -366,6 +369,7 @@ const Cybercrime = () => {
               </b>
             </p>
             <img
+              alt=""
               src={trojan}
               style={{ width: "100%", height: "400px" }}
               class="py-3"
@@ -402,6 +406,7 @@ const Cybercrime = () => {
             </p>
             <hr></hr>
             <img
+              alt=""
               src={theft}
               style={{ width: "100%", height: "400px" }}
               class="py-3"
@@ -439,6 +444,7 @@ const Cybercrime = () => {
             </b>
           </p>
           <img
+            alt=""
             src={phishing}
             style={{ width: "100%", height: "450px" }}
             class="py-3"
@@ -475,6 +481,7 @@ const Cybercrime = () => {
             </b>
           </p>
           <img
+            alt=""
             src={espionage}
             style={{ width: "100%", height: "400px" }}
             class="py-3"
@@ -512,6 +519,7 @@ const Cybercrime = () => {
             </b>
           </p>
           <img
+            alt=""
             src={warfare}
             style={{ width: "100%", height: "370px" }}
             class="py-3"

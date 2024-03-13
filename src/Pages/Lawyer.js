@@ -1,6 +1,6 @@
 import React from "react";
 import image from "../Assets/images/Lawyer-rafiki.png";
-import Selectoption from "../Components/selectoption";
+
 const lawyer = () => {
   return (
     <>
@@ -32,6 +32,7 @@ const lawyer = () => {
                       <div className="mb-4">
                         <img
                           class="img-fluid responsiv"
+                          alt="not found"
                           style={{
                             backgroundSize: "contain",
                             backgroundRepeat: "no-repeat",
@@ -67,7 +68,6 @@ const lawyer = () => {
           </div>
         </div>
       </section>
-      <Selectoption />
     </>
   );
 };
