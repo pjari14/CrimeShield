@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import image from "../Assets/images/Contact2.jpg";
 
 const contactus = () => {

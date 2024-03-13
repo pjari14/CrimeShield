@@ -1,9 +1,11 @@
 import React from "react";
-import image from "../Assets/images/Heading__1_-removebg-preview.png";
+
+import { useDispatch, useSelector } from "react-redux";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 
 import { Link } from "react-router-dom";
+import { fetchUser } from "../ReduxStore/Userslice/Userslice";
 const Login = () => {
   const {
     formState: { errors },
@@ -11,15 +13,23 @@ const Login = () => {
     register,
     reset,
   } = useForm();
+  const user = useSelector((state) => state.user);
+  const dispatch = useDispatch();
 
   const loginUser = async (data) => {
     try {
       const url = "http://localhost:5000/user/login";
       const res = await axios.post(url, data, { withCredentials: true });
-      console.log(res);
+      if (res.data.success) {
+        dispatch(fetchUser());
+        console.log(user);
+        alert("Login successfull!");
+        window.location.href = "/complaint";
+      }
       reset();
     } catch (error) {
       console.error(error);
+      alert("Please check email and password");
     }
   };
 

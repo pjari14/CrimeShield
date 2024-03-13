@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import lock from "../Assets/icons/lock.png";
 import service from "../Assets/icons/service.png";
 import time from "../Assets/icons/back-in-time.png";

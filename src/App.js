@@ -9,14 +9,21 @@ import Signup from "./Pages/Signup";
 import PersonalData from "./Pages/personaldata";
 import Incident from "./Pages/Incident";
 import CheckStatus from "./Pages/checkstatus";
-import Complaint from "./Pages/Complaint";
+import Complaint from "./Pages/complaint";
 import Cybersafety from "./Pages/cybersafety";
 import Lawyer from "./Pages/Lawyer";
 import Cybercrime from "./Pages/cybercrime";
 import Citizenmanual from "./Pages/citizenmanual";
 import Gallery from "./Pages/gallery";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { fetchUser } from "./ReduxStore/Userslice/Userslice";
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchUser());
+  }, []);
   return (
     <div>
       <Navbar />
