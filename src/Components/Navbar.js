@@ -43,7 +43,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link class="dropdown-item" to="/reportannonymsly">
+                  <Link class="dropdown-item" to="/reportannonymously">
                     Report Anonymously
                   </Link>
                 </li>

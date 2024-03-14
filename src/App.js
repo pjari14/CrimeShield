@@ -15,6 +15,9 @@ import Lawyer from "./Pages/Lawyer";
 import Cybercrime from "./Pages/cybercrime";
 import Citizenmanual from "./Pages/citizenmanual";
 import Gallery from "./Pages/gallery";
+import Annonymously from "./Pages/reportannonymously";
+import Suspect from "./Pages/SuspectDetails";
+import Preview from "./Pages/previewcomplaint";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { fetchUser } from "./ReduxStore/Userslice/Userslice";
@@ -41,6 +44,9 @@ function App() {
         <Route path="/cybercrime" element={<Cybercrime />}></Route>
         <Route path="/citizenmanual" element={<Citizenmanual />}></Route>
         <Route path="/gallery" element={<Gallery />}></Route>
+        <Route path="reportannonymously" element={<Annonymously />}></Route>
+        <Route path="/suspectdetails" element={<Suspect />}></Route>
+        <Route path="/previewcomplaint" element={<Preview />}></Route>
       </Routes>
       <Footer />
     </div>
