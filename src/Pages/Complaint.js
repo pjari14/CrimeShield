@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+
 import {
   CCContent,
   DVContent,
@@ -64,13 +65,11 @@ const Complaint = () => {
           <div class="col-sm-12">
             <h2 class="text text-danger fw-3">Incident Details</h2>
           </div>
-
           <div class="col-md-6">
             <label class="form-label">Date of complaint:</label>
 
             <input class="form-control" type="date" name="doc" id="cdate" />
           </div>
-
           <div class="col-md-6">
             <label class="form-label">Incident Date:</label>
 
@@ -81,7 +80,6 @@ const Complaint = () => {
               id="idate"
             />
           </div>
-
           <div class="col-md-6">
             <label class="form-label">Incident Time:</label>
 
@@ -92,7 +90,6 @@ const Complaint = () => {
               id="selecttime"
             />
           </div>
-
           <div class="col-md-6">
             <label class="form-label">Select Crime Type:</label>
 
@@ -112,7 +109,23 @@ const Complaint = () => {
               ))}
             </select>
           </div>
-
+          <div class="col-md-6">
+            <label for="inputIncidentplace" class="form-label">
+              Where did the incident occur?
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter where did the incident occur"
+              id="inputIncidentplace"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="supportingevidence" class="form-label">
+              Supporting Evidence
+            </label>
+            <input type="file" class="form-control" id="supportingevidence" />
+          </div>
           <div class="col-md-6">
             <label class="form-label">
               Name of the person/company against which/whom the complaint is
@@ -121,7 +134,6 @@ const Complaint = () => {
 
             <input class="form-control" name="suspect" type="text" id="" />
           </div>
-
           <div class="col-md-6">
             <label class="form-label">
               Any specific information about the crime:
@@ -133,7 +145,6 @@ const Complaint = () => {
               id="addinfo"
             ></textarea>
           </div>
-
           <div class="col-6">
             <input
               class="form-check-input"
@@ -166,7 +177,7 @@ const Complaint = () => {
             </div>
             <div class="col-4 ">
               <Link
-                to="/Complaint"
+                to="/suspectdetail"
                 class="btn shadow-sm button btn-sm btn-info shadow-sm bg-gradient p-3 text-center text-white fw-bold "
               >
                 <span>Next</span>
@@ -184,4 +195,3 @@ const Complaint = () => {
   );
 };
 export default Complaint;
-

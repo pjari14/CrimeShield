@@ -4,6 +4,8 @@ import image1 from "../Assets/images/register.jpg";
 import image2 from "../Assets/images/login.jpg";
 import image3 from "../Assets/images/personal_data.jpg";
 import image4 from "../Assets/images/incident.jpg";
+import image5 from "../Assets/images/incident_1.jpg";
+
 const Citizenmanual = () => {
   return (
     <>
@@ -14,15 +16,15 @@ const Citizenmanual = () => {
           </div>
           <hr></hr>
           <div class="row">
-          <td
-                style={{
-                  backgroundColor: "#74A4BC",
-                  color: "white",
-                  fontSize: "20px",
-                }}
-              >
-                ⇒ HOW TO REPORT AND TRACK A COMPLAINT
-              </td>
+            <td
+              style={{
+                backgroundColor: "#74A4BC",
+                color: "white",
+                fontSize: "20px",
+              }}
+            >
+              ⇒ HOW TO REPORT AND TRACK A COMPLAINT
+            </td>
           </div>
           <div class="row g-3 shadow py-4 px-4 mx-10 my-1">
             <tr class="row">
@@ -276,19 +278,18 @@ const Citizenmanual = () => {
               * Select the checkbox to confirm that the details you have
               provided are accurate.
             </p>
-            
           </div>
           <br></br>
           <div class="row">
-          <td
-                style={{
-                  backgroundColor: "#74A4BC",
-                  color: "white",
-                  fontSize: "20px",
-                }}
-              >
-                ⇒ HOW TO REPORT AN ANONYMOUS COMPLAINT
-              </td>
+            <td
+              style={{
+                backgroundColor: "#74A4BC",
+                color: "white",
+                fontSize: "20px",
+              }}
+            >
+              ⇒ HOW TO REPORT AN ANONYMOUS COMPLAINT
+            </td>
           </div>
           <div class="row g-3 shadow py-4 px-4 mx-10 my-1">
             <tr class="row">
@@ -302,7 +303,30 @@ const Citizenmanual = () => {
                 Step 1 :- Navigate to Report Anonymously complaint section
               </td>
             </tr>
+
+            <div class="row">
+              <div class="col-sm">
+                <img
+                  src={image5}
+                  style={{ width: "105%", height: "400px" }}
+                  clsss="py-3"
+                ></img>
+              </div>
+              <div class="col-sm">
+                <p
+                  style={{
+                    paddingTop: "30px",
+                    fontSize: "18px",
+                    color: "#150578",
+                  }}
+                >
+                  {" "}
+                  ➤ You are required to fill your incident details into
+                  anonymous report portal.
+                </p>
+              </div>
             </div>
+          </div>
         </div>
       </div>
     </>
