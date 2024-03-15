@@ -17,7 +17,7 @@ const Citizenmanual = () => {
           <td
                 style={{
                   backgroundColor: "#74A4BC",
-                  color: "#121420",
+                  color: "white",
                   fontSize: "20px",
                 }}
               >
@@ -28,8 +28,8 @@ const Citizenmanual = () => {
             <tr class="row">
               <td
                 style={{
-                  backgroundColor: "#938BA1",
-                  color: "#121420",
+                  backgroundColor: "#BA68C8",
+                  color: "white",
                   fontSize: "20px",
                 }}
               >
@@ -88,8 +88,8 @@ const Citizenmanual = () => {
             <tr class="row">
               <td
                 style={{
-                  backgroundColor: "#938BA1",
-                  color: "#121420",
+                  backgroundColor: "#BA68C8",
+                  color: "white",
                   fontSize: "20px",
                 }}
               >
@@ -137,8 +137,8 @@ const Citizenmanual = () => {
             <tr class="row">
               <td
                 style={{
-                  backgroundColor: "#938BA1",
-                  color: "#121420",
+                  backgroundColor: "#BA68C8",
+                  color: "white",
                   fontSize: "20px",
                 }}
               >
@@ -215,8 +215,8 @@ const Citizenmanual = () => {
             <tr class="row">
               <td
                 style={{
-                  backgroundColor: "#938BA1",
-                  color: "#121420",
+                  backgroundColor: "#BA68C8",
+                  color: "white",
                   fontSize: "20px",
                 }}
               >
@@ -283,7 +283,7 @@ const Citizenmanual = () => {
           <td
                 style={{
                   backgroundColor: "#74A4BC",
-                  color: "#121420",
+                  color: "white",
                   fontSize: "20px",
                 }}
               >
@@ -294,8 +294,8 @@ const Citizenmanual = () => {
             <tr class="row">
               <td
                 style={{
-                  backgroundColor: "#938BA1",
-                  color: "#121420",
+                  backgroundColor: "#BA68C8",
+                  color: "white",
                   fontSize: "20px",
                 }}
               >
