@@ -1,14 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Suspect = () => {
+const Suspect = ({ nextLink, backlink, title }) => {
   return (
     <>
       <div class="container mt-2 pt-2">
         <div class="col-sm-12">
-          <div class=" p-3 text-center mb-2 text-success fs-1">
-            Report complaint annonymously!
-          </div>
+          <div class=" p-3 text-center mb-2 text-success fs-1">{title}</div>
           <hr />
         </div>
 
@@ -71,7 +69,7 @@ const Suspect = () => {
           <div class="row py-4 justify-content-end">
             <div class="col-3 ">
               <Link
-                to="/reportannonymously"
+                to={backlink}
                 class="btn shadow-sm  btn-sm btn-warning shadow-sm w-100 bg-gradient p-3 text-center text-white fw-bold "
               >
                 <span>Back</span>
@@ -80,7 +78,7 @@ const Suspect = () => {
 
             <div class="col-3 ">
               <Link
-                to="/previewcomplaint"
+                to={nextLink}
                 class="btn shadow-sm button btn-sm btn-info shadow-sm w-100 bg-gradient p-3 text-center text-white fw-bold "
               >
                 <span>Preview & Next</span>

@@ -43,7 +43,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link class="dropdown-item" to="/reportannonymously">
+                  <Link class="dropdown-item" to="/complaint2">
                     Report Anonymously
                   </Link>
                 </li>
@@ -89,14 +89,14 @@ const Navbar = () => {
             <Link className="nav-link" to="/lawyer">
               Lawyer
             </Link>
-            <Link className="nav-Link" to="/admin">
-              Admin
-            </Link>
             <Link className="nav-link" to="/contactus">
               Contact
             </Link>
             <Link className="nav-link" to="/login">
               Sign In
+            </Link>
+            <Link className="nav-link" to="/adminlogin">
+              Admin
             </Link>
           </div>
         </div>

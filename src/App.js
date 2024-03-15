@@ -7,22 +7,21 @@ import Home from "./Pages/Home";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
 import PersonalData from "./Pages/personaldata";
-import Incident from "./Pages/Incident";
 import CheckStatus from "./Pages/checkstatus";
-import Complaint from "./Pages/complaint";
 import Cybersafety from "./Pages/cybersafety";
 import Lawyer from "./Pages/Lawyer";
 import Cybercrime from "./Pages/cybercrime";
 import Citizenmanual from "./Pages/citizenmanual";
 import Gallery from "./Pages/gallery";
-import Admin from "./Pages/Admin-Pages/Admin";
-import Annonymously from "./Pages/reportannonymously";
-import Suspect from "./Pages/SuspectDetails";
-import Preview from "./Pages/previewcomplaint";
-import Suspectdetail from "./Pages/suspectdetail";
+import Admin from "./Pages/Admin/Admin";
+import Preview1 from "./Pages/preview1";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { fetchUser } from "./ReduxStore/Userslice/Userslice";
+import Complaint1 from "./Pages/complaint1";
+import Complaint2 from "./Pages/complaint2";
+import Suspect1 from "./Pages/suspect1";
+import Suspect2 from "./Pages/suspect2";
 
 function App() {
   const dispatch = useDispatch();
@@ -38,19 +37,18 @@ function App() {
         <Route path="/signup" element={<Signup />}></Route>
         <Route path="/CheckStatus" element={<CheckStatus />}></Route>
         <Route path="/PersonalData" element={<PersonalData />}></Route>
-        <Route path="/Incident" element={<Incident />}></Route>
         <Route path="/contactus" element={<Contactus />}></Route>
-        <Route path="/complaint" element={<Complaint />}></Route>
         <Route path="/cybersafety" element={<Cybersafety />}></Route>
         <Route path="/lawyer" element={<Lawyer />}></Route>
         <Route path="/cybercrime" element={<Cybercrime />}></Route>
         <Route path="/citizenmanual" element={<Citizenmanual />}></Route>
         <Route path="/gallery" element={<Gallery />}></Route>
         <Route path="/admin" element={<Admin />}></Route>
-        <Route path="reportannonymously" element={<Annonymously />}></Route>
-        <Route path="/suspectdetails" element={<Suspect />}></Route>
-        <Route path="/previewcomplaint" element={<Preview />}></Route>
-        <Route path="/suspectdetail" element={<Suspectdetail />}></Route>
+        <Route path="/preview1" element={<Preview1 />}></Route>
+        <Route path="/complaint1" element={<Complaint1 />}></Route>
+        <Route path="/complaint2" element={<Complaint2 />}></Route>
+        <Route path="/suspect1" element={<Suspect1 />}></Route>
+        <Route path="/suspect2" element={<Suspect2 />}></Route>
       </Routes>
       <Footer />
     </div>

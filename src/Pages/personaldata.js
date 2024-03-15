@@ -106,7 +106,7 @@ const PersonalData = () => {
           </div>
           <div class="col-3 ">
             <Link
-              to="/Complaint"
+              to="/Complaint1"
               class="btn shadow-sm button btn-sm btn-info shadow-sm w-100 bg-gradient p-3 text-center text-white fw-bold "
             >
               <span>Next</span>

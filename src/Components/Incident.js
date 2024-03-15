@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import IndiaCities from "../Components/incidancities";
 import {
   CCContent,
   DVContent,
@@ -39,7 +39,7 @@ const crimeDetails = {
   },
 };
 
-const Complaint = () => {
+const Incident = ({ nextlink, backlink, title }) => {
   const [selectedCrime, setSelectedCrime] = useState(null);
 
   const handleCrimeChange = (e) => {
@@ -55,44 +55,18 @@ const Complaint = () => {
     <>
       <div class="container mt-2 pt-2">
         <div class="col-sm-12">
-          <div class=" p-3 text-center mb-2 text-success fs-1">
-            File your complaint here !!
-          </div>
+          <div class=" p-3 text-center mb-2 text-success fs-1">{title}</div>
           <hr />
         </div>
-
-        <form class="row g-3  shadow py-4 px-4 mx-5 my-5 " id="complaint">
+        <form class="row g-3 shadow py-4 px-4 mx-5 my-5 " id="complaintdetails">
           <div class="col-sm-12">
-            <h2 class="text text-danger fw-3">Incident Details</h2>
+            <h2 class="text text-danger fw-3">Complaint/Incident details</h2>
+          </div>
+          <hr />
+          <div class="col-md-6">
+            <label class="form-label"> Category of complaint:</label>
           </div>
           <div class="col-md-6">
-            <label class="form-label">Date of complaint:</label>
-
-            <input class="form-control" type="date" name="doc" id="cdate" />
-          </div>
-          <div class="col-md-6">
-            <label class="form-label">Incident Date:</label>
-
-            <input
-              class="form-control"
-              type="date"
-              name="incidentDate"
-              id="idate"
-            />
-          </div>
-          <div class="col-md-6">
-            <label class="form-label">Incident Time:</label>
-
-            <input
-              class="form-control"
-              type="Time"
-              name="incidentTime"
-              id="selecttime"
-            />
-          </div>
-          <div class="col-md-6">
-            <label class="form-label">Select Crime Type:</label>
-
             <select
               class="form-select"
               id="ctype"
@@ -109,10 +83,45 @@ const Complaint = () => {
               ))}
             </select>
           </div>
+
+          <div class="col-md-6">
+            <label class="form-label">Date of complaint:</label>
+          </div>
+          <div class="col-md-6">
+            <input class="form-control" type="date" name="doc" id="cdate" />
+          </div>
+          <IndiaCities />
+
+          <div class="col-md-6">
+            <label class="form-label">
+              Approximate date & time of incident:
+            </label>
+          </div>
+          <div class="col-md-4">
+            <input type="date" class="form-control" id="dtincident" />
+          </div>
+          <div class="col-md-2">
+            <input type="time" class="form-control" />
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">
+              Reason of delay in report:
+            </label>
+          </div>
+          <div class="col-md-6">
+            <input
+              type="textarea"
+              placeholder="Enter reason of delay"
+              class="form-control"
+              id="reasonindelay"
+            />
+          </div>
           <div class="col-md-6">
             <label for="inputIncidentplace" class="form-label">
               Where did the incident occur?
             </label>
+          </div>
+          <div class="col-md-6">
             <input
               type="text"
               class="form-control"
@@ -124,6 +133,8 @@ const Complaint = () => {
             <label for="supportingevidence" class="form-label">
               Supporting Evidence
             </label>
+          </div>
+          <div class="col-md-6">
             <input type="file" class="form-control" id="supportingevidence" />
           </div>
           <div class="col-md-6">
@@ -131,53 +142,50 @@ const Complaint = () => {
               Name of the person/company against which/whom the complaint is
               filed:
             </label>
-
+          </div>
+          <div class="col-md-6">
             <input class="form-control" name="suspect" type="text" id="" />
           </div>
           <div class="col-md-6">
-            <label class="form-label">
-              Any specific information about the crime:
+            <label for="additionalinfo" class="form-label">
+              Please provide any additional information:
             </label>
-
-            <textarea
-              class="form-control"
-              name="additionalInfo"
-              id="addinfo"
-            ></textarea>
           </div>
-          <div class="col-6">
+          <div class="col-md-6">
+            <textarea class="form-control" id="additionalinfo" rows="3" />
+          </div>
+
+          <div class="col-md-12 mx-3 text-danger">
             <input
-              class="form-check-input"
+              class="form-check-input "
               type="checkbox"
               value=""
               id="check"
             />
             <label class="form-check-label" for="flexCheckDefault">
-              I confirm that the information I've given is accurate and true.
+              *I confirm that the information I've given is accurate and true.
             </label>
           </div>
           <div class="row py-4 ">
             <div class="col-4 ">
-              <Link
-                to="/PersonalData"
-                class="btn btn-sm shadow-sm  btn-dark   bg-gradient  p-3 text-center text-white fw-bold "
-              >
-                Back
-              </Link>
-            </div>
-            <div class="col-4 ">
               <button
                 type="reset"
-                id="btnclear"
-                to=""
-                class="btn btn-sm shadow-sm  btn-warning   bg-gradient  p-3 text-center text-white fw-bold "
+                class="btn btn-sm shadow-sm  btn-dark   bg-gradient  p-3 text-center text-white fw-bold "
               >
                 Clear
               </button>
             </div>
             <div class="col-4 ">
               <Link
-                to="/suspectdetail"
+                to={backlink}
+                class="btn shadow-sm  btn-sm btn-warning shadow-sm bg-gradient p-3 text-center text-white fw-bold "
+              >
+                <span>Back</span>
+              </Link>
+            </div>
+            <div class="col-4 ">
+              <Link
+                to={nextlink}
                 class="btn shadow-sm button btn-sm btn-info shadow-sm bg-gradient p-3 text-center text-white fw-bold "
               >
                 <span>Next</span>
@@ -194,4 +202,4 @@ const Complaint = () => {
     </>
   );
 };
-export default Complaint;
+export default Incident;
