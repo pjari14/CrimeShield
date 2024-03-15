@@ -1,16 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Suspect = ({ nextLink, backlink, title }) => {
+const Suspect = () => {
   return (
     <>
       <div class="container mt-2 pt-2">
         <div class="col-sm-12">
-          <div class=" p-3 text-center mb-2 text-success fs-1">{title}</div>
+          <div class=" p-3 text-center mb-2 text-success fs-1">
+            File your complaint here!
+          </div>
           <hr />
         </div>
-
-        <form class="row g-3 shadow py-4 px-4 mx-5 my-5 " id="personaldata">
+        <form class="row g-3 shadow py-4 px-4 mx-5 my-5 " id="complaintdetails">
           <div class="col-sm-12">
             <h2 class="text text-danger fw-3">Suspect details</h2>
             <h6 class="text-white bg-primary py-2 my-2 px-2">
@@ -69,7 +70,7 @@ const Suspect = ({ nextLink, backlink, title }) => {
           <div class="row py-4 justify-content-end">
             <div class="col-3 ">
               <Link
-                to={backlink}
+                to="/Incident"
                 class="btn shadow-sm  btn-sm btn-warning shadow-sm w-100 bg-gradient p-3 text-center text-white fw-bold "
               >
                 <span>Back</span>
@@ -78,7 +79,7 @@ const Suspect = ({ nextLink, backlink, title }) => {
 
             <div class="col-3 ">
               <Link
-                to={nextLink}
+                to="/preview"
                 class="btn shadow-sm button btn-sm btn-info shadow-sm w-100 bg-gradient p-3 text-center text-white fw-bold "
               >
                 <span>Preview & Next</span>

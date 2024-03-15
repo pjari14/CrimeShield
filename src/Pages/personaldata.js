@@ -7,15 +7,15 @@ const PersonalData = () => {
       <div class="container mt-2 pt-2">
         <div class="col-sm-12">
           <div class=" p-3 text-center mb-2 text-success fs-1">
-            File your complaint here !!
+            File your complaint here!
           </div>
           <hr />
         </div>
-
-        <form class="row g-3 shadow py-4 px-4 mx-5 my-5 " id="personaldata">
+        <form class="row g-3 shadow py-4 px-4 mx-5 my-5 " id="complaintdetails">
           <div class="col-sm-12">
-            <h2 class="text text-danger fw-3">Personal Data</h2>
+            <h2 class="text text-danger fw-3">Personal details</h2>
           </div>
+          <hr />
           <div class="col-md-6">
             <label for="inputName" class="form-label">
               First Name
@@ -106,7 +106,7 @@ const PersonalData = () => {
           </div>
           <div class="col-3 ">
             <Link
-              to="/Complaint1"
+              to="/Incident"
               class="btn shadow-sm button btn-sm btn-info shadow-sm w-100 bg-gradient p-3 text-center text-white fw-bold "
             >
               <span>Next</span>

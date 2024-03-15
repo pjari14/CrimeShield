@@ -14,14 +14,12 @@ import Cybercrime from "./Pages/cybercrime";
 import Citizenmanual from "./Pages/citizenmanual";
 import Gallery from "./Pages/gallery";
 import Admin from "./Pages/Admin/Admin";
-import Preview1 from "./Pages/preview1";
+import Preview from "./Pages/preview";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { fetchUser } from "./ReduxStore/Userslice/Userslice";
-import Complaint1 from "./Pages/complaint1";
-import Complaint2 from "./Pages/complaint2";
-import Suspect1 from "./Pages/suspect1";
-import Suspect2 from "./Pages/suspect2";
+import Incident from "./Pages/Incident";
+import Suspect from "./Pages/Suspect";
 
 function App() {
   const dispatch = useDispatch();
@@ -44,11 +42,10 @@ function App() {
         <Route path="/citizenmanual" element={<Citizenmanual />}></Route>
         <Route path="/gallery" element={<Gallery />}></Route>
         <Route path="/admin" element={<Admin />}></Route>
-        <Route path="/preview1" element={<Preview1 />}></Route>
-        <Route path="/complaint1" element={<Complaint1 />}></Route>
-        <Route path="/complaint2" element={<Complaint2 />}></Route>
-        <Route path="/suspect1" element={<Suspect1 />}></Route>
-        <Route path="/suspect2" element={<Suspect2 />}></Route>
+        <Route path="/preview" element={<Preview />}></Route>
+        <Route path="/Incident" element={<Incident />}></Route>
+
+        <Route path="/Suspect" element={<Suspect />}></Route>
       </Routes>
       <Footer />
     </div>

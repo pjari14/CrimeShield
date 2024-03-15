@@ -25,30 +25,11 @@ const Navbar = () => {
             <Link className="nav-link active" to="/">
               Home
             </Link>
-            <li className="nav-item dropdown">
-              <Link
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Register a Complaint
-              </Link>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <Link class="dropdown-item" to="/PersonalData">
-                    Register & Track
-                  </Link>
-                </li>
-                <li>
-                  <Link class="dropdown-item" to="/complaint2">
-                    Report Anonymously
-                  </Link>
-                </li>
-              </ul>
-            </li>
+
+            <Link class="nav-link" to="/PersonalData">
+              Register & Track
+            </Link>
+
             <Link className="nav-link" to="/CheckStatus">
               View FIR status
             </Link>

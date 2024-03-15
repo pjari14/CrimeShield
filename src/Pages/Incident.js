@@ -39,7 +39,7 @@ const crimeDetails = {
   },
 };
 
-const Incident = ({ nextlink, backlink, title }) => {
+const Incident = () => {
   const [selectedCrime, setSelectedCrime] = useState(null);
 
   const handleCrimeChange = (e) => {
@@ -55,7 +55,9 @@ const Incident = ({ nextlink, backlink, title }) => {
     <>
       <div class="container mt-2 pt-2">
         <div class="col-sm-12">
-          <div class=" p-3 text-center mb-2 text-success fs-1">{title}</div>
+          <div class=" p-3 text-center mb-2 text-success fs-1">
+            File your complaint here!
+          </div>
           <hr />
         </div>
         <form class="row g-3 shadow py-4 px-4 mx-5 my-5 " id="complaintdetails">
@@ -177,7 +179,7 @@ const Incident = ({ nextlink, backlink, title }) => {
             </div>
             <div class="col-4 ">
               <Link
-                to={backlink}
+                to="/personaldata"
                 class="btn shadow-sm  btn-sm btn-warning shadow-sm bg-gradient p-3 text-center text-white fw-bold "
               >
                 <span>Back</span>
@@ -185,7 +187,7 @@ const Incident = ({ nextlink, backlink, title }) => {
             </div>
             <div class="col-4 ">
               <Link
-                to={nextlink}
+                to="/suspect"
                 class="btn shadow-sm button btn-sm btn-info shadow-sm bg-gradient p-3 text-center text-white fw-bold "
               >
                 <span>Next</span>
