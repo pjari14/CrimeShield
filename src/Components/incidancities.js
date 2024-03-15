@@ -59,44 +59,39 @@ const IndiaCities = () => {
   };
 
   return (
-    <div className="india-cities-container">
-      <div className="form-group">
-        <div class="row">
-          <div class="col-md-6">
-            <label htmlFor="state">Select a state</label>
-          </div>
-          <div class="col-md-6">
-            <select
-              className="form-control"
-              id="state"
-              value={selectedState}
-              onChange={handleStateChange}
-            >
-              <option value="Select" defaultValue={"NA"}>
-                Select
-              </option>
-              {states.map((state, index) => (
-                <option key={index} value={state.name}>
-                  {state.name}
-                </option>
-              ))}
-            </select>
-          </div>
-        </div>
-        <div class="col-md-6">
-          {" "}
-          <label htmlFor="city">Select a city in {selectedState}</label>
-        </div>
-        <div class="col-md-6">
-          {" "}
-          <select className="form-control" id="city">
-            {cities.map((city, index) => (
-              <option key={index}>{city}</option>
-            ))}
-          </select>
-        </div>
+    <>
+      <div class="col-md-6">
+        <label htmlFor="state">Select a state</label>
       </div>
-    </div>
+      <div class="col-md-6">
+        <select
+          className="form-control"
+          id="state"
+          value={selectedState}
+          onChange={handleStateChange}
+        >
+          <option value="Select" defaultValue={"NA"}>
+            Select
+          </option>
+          {states.map((state, index) => (
+            <option key={index} value={state.name}>
+              {state.name}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label htmlFor="city">Select a city in {selectedState}</label>
+      </div>
+      <div class="col-md-6">
+        <select className="form-control" id="city">
+          {cities.map((city, index) => (
+            <option key={index}>{city}</option>
+          ))}
+        </select>
+      </div>
+    </>
   );
 };
 

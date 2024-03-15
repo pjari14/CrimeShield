@@ -18,6 +18,7 @@ import Gallery from "./Pages/gallery";
 import Annonymously from "./Pages/reportannonymously";
 import Suspect from "./Pages/SuspectDetails";
 import Preview from "./Pages/previewcomplaint";
+import Suspectdetail from "./Pages/suspectdetail";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { fetchUser } from "./ReduxStore/Userslice/Userslice";
@@ -47,6 +48,7 @@ function App() {
         <Route path="reportannonymously" element={<Annonymously />}></Route>
         <Route path="/suspectdetails" element={<Suspect />}></Route>
         <Route path="/previewcomplaint" element={<Preview />}></Route>
+        <Route path="/suspectdetail" element={<Suspectdetail />}></Route>
       </Routes>
       <Footer />
     </div>
