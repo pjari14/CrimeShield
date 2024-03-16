@@ -1,5 +1,5 @@
-const express = require('express');
-const complaintController = require('../controller/complaintController');
+const express = require("express");
+const complaintController = require("../controller/complaintController");
 
 const router = express.Router();
 
@@ -12,18 +12,15 @@ const router = express.Router();
 // });
 
 router
-  .route('/')
+  .route("/")
   .post(complaintController.createComplaint)
   .get(complaintController.showData);
 
-router  
-  .route('/:id')
+router
+  .route("/:id")
   .get(complaintController.showonerecord)
   .patch(complaintController.updateComplaint)
   .delete(complaintController.deleteComplaint);
-
-
-
 
 // router.post("/login", async (req, res) => {
 //   const u = req.body;

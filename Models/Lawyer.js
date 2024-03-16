@@ -43,6 +43,6 @@ const lawyerSchema = new mongoose.Schema(
         },
 });
 
-const lawyer = new mongoose.model("lawyer",lawyerSchema);
+const Lawyer = new mongoose.model("lawyer",lawyerSchema);
 
-module.exports = lawyer;
+module.exports = Lawyer;

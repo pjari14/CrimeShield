@@ -4,6 +4,7 @@
   "description": "backend for crimeshield project.",
   "main": "server.js",
   "scripts": {
+    "start": "nodemon server.js",
     "test": "nodemon server.js"
   },
   "author": "",

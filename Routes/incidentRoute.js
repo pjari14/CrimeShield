@@ -1,5 +1,5 @@
-const express = require('express');
-const incidentController = require('../controller/incidentController');
+const express = require("express");
+const incidentController = require("../controller/incidentController");
 
 const router = express.Router();
 
@@ -12,18 +12,15 @@ const router = express.Router();
 // });
 
 router
-  .route('/')
+  .route("/")
   .post(incidentController.createIncident)
   .get(incidentController.showData);
 
-router  
-  .route('/:id')
+router
+  .route("/:id")
   .get(incidentController.showonerecord)
   .patch(incidentController.updateIncident)
   .delete(incidentController.deleteIncident);
-
-
-
 
 // router.post("/login", async (req, res) => {
 //   const u = req.body;
