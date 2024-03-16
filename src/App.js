@@ -20,6 +20,9 @@ import { useDispatch } from "react-redux";
 import { fetchUser } from "./ReduxStore/Userslice/Userslice";
 import Incident from "./Pages/Incident";
 import Suspect from "./Pages/Suspect";
+import AdminLogin from "./Pages/adminlogin";
+import UsersTable from "./Pages/Admin/registereduser";
+
 
 function App() {
   const dispatch = useDispatch();
@@ -44,8 +47,9 @@ function App() {
         <Route path="/admin" element={<Admin />}></Route>
         <Route path="/preview" element={<Preview />}></Route>
         <Route path="/Incident" element={<Incident />}></Route>
-
         <Route path="/Suspect" element={<Suspect />}></Route>
+      <Route path="/Adminlogin" element={<AdminLogin/>}></Route>
+      <Route path="/registereduser" element={<UsersTable/>}></Route>
       </Routes>
       <Footer />
     </div>

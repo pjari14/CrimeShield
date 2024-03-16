@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../Assets/images/Lawyer-rafiki.png";
+import { Link } from "react-router-dom";
 
 const lawyer = () => {
   return (

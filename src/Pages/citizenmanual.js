@@ -4,7 +4,7 @@ import image1 from "../Assets/images/register.jpg";
 import image2 from "../Assets/images/login.jpg";
 import image3 from "../Assets/images/personal_data.jpg";
 import image4 from "../Assets/images/incident.jpg";
-import image5 from "../Assets/images/incident_1.jpg";
+import image5 from "../Assets/images/suspect.jpg";
 
 const Citizenmanual = () => {
   return (
@@ -185,7 +185,7 @@ const Citizenmanual = () => {
                   <b style={{ color: "Orange" }}>
                     (Aadhar card, Driving License, PAN Card)
                   </b>
-                  . <b style={{ color: "red" }}>(mandatory) </b>
+                  <b style={{ color: "red" }}>(mandatory) </b>
                 </p>
                 <p style={{ paddingLeft: "23px" }}>
                   v. Enter your permanent address.{" "}
@@ -278,20 +278,7 @@ const Citizenmanual = () => {
               * Select the checkbox to confirm that the details you have
               provided are accurate.
             </p>
-          </div>
-          <br></br>
-          <div class="row">
-            <td
-              style={{
-                backgroundColor: "#74A4BC",
-                color: "white",
-                fontSize: "20px",
-              }}
-            >
-              ⇒ HOW TO REPORT AN ANONYMOUS COMPLAINT
-            </td>
-          </div>
-          <div class="row g-3 shadow py-4 px-4 mx-10 my-1">
+            <hr></hr>
             <tr class="row">
               <td
                 style={{
@@ -300,16 +287,16 @@ const Citizenmanual = () => {
                   fontSize: "20px",
                 }}
               >
-                Step 1 :- Navigate to Report Anonymously complaint section
+                Step 4 :- Provide suspect details.
               </td>
             </tr>
-
+            <br></br>
             <div class="row">
               <div class="col-sm">
                 <img
                   src={image5}
-                  style={{ width: "105%", height: "400px" }}
-                  clsss="py-3"
+                  style={{ width: "100%", height: "450px" }}
+                  class="py-3"
                 ></img>
               </div>
               <div class="col-sm">
@@ -321,10 +308,34 @@ const Citizenmanual = () => {
                   }}
                 >
                   {" "}
-                  ➤ You are required to fill your incident details into
-                  anonymous report portal.
+                  ➤ You are required to fill the suspect details into your
+                  report.
+                </p>
+
+                <p style={{ paddingLeft: "23px" }}>
+                  i. Enter the name of suspect.
+                  <b style={{ color: "red" }}>(mandatory) </b>
+                </p>
+                <p style={{ paddingLeft: "23px" }}>
+                  ii. Select identity of the suspect.
+                  <b style={{ color: "red" }}>(mandatory) </b>
+                </p>
+                <p style={{ paddingLeft: "23px" }}>
+                  iii. Upload any photograph of the suspect.
+                  <b style={{ color: "Orange" }}>
+                    (Aadhar card, Driving License, PAN Card)
+                  </b>
+                  <b style={{ color: "red" }}>(mandatory) </b>
+                </p>
+                <p style={{ paddingLeft: "23px" }}>
+                  iv. Provide any additional details.
+                  <b style={{ color: "red" }}>(mandatory) </b>
                 </p>
               </div>
+              <p style={{ color: "red" }}>
+                * Ensure that the information you submit is true, current and
+                reliable.
+              </p>
             </div>
           </div>
         </div>

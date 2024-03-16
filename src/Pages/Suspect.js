@@ -30,7 +30,7 @@ const Suspect = () => {
           </div>
           <div class="col-md-3">
             <select class="form-control">
-              <option value="Select">Select</option>
+              <option value="Select">Select Suspect Identity</option>
               <option value="Instagram id">Instagram id</option>
               <option value="Mobile number">Mobile Contact</option>
               <option value="Facebook">Facebook</option>
