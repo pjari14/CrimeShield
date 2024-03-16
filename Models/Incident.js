@@ -1,39 +1,55 @@
 const mongoose = require("mongoose");
+const {ComplaintSchema} = require("./ComplaintModel");
 
 const incidentSchema = new mongoose.Schema(
     {
-        IncidentID: {
+        complaintID: {
+            // type: ComplaintSchema,
             type: mongoose.Types.ObjectId,
-            ref: "complaints",
+            // ref: "complaints",
             required: true,
         },
-        Category:{
+        category:{
             type:String,
             required:true,
-            enum: ["Women/Child related Crime","Cyber Crime","Financial Fraud"],
-            default: "Public",
+            enum: ["Cyber Crime","Domestic Violence","Abuse","Theft","Robbery"]
         },
-        Date: {
+        dateofcmp: {
             type : Date,
             default:Date.now,
         },
         
-        State: {
+        state: {
             type: String,
             required: true,
         },
-        City: {
+        city: {
             type: String,
             required: true,
         },
-        PoliceStation: {
+        policestation: {
             type:String,
             required: true,
         },
-        Description: {
+        datentime: {
+            type: Date
+        },
+        reasonofdelay: {
+            type:String
+        },
+        location: {
+            type: String
+        },
+        evidence: {
+            type: String
+        },
+        nameofsus: {
+            type: String
+        },
+        additionalinfo: {
             type: String,
             required: false,
-            default: null,
+            default: null
         },
         
     }

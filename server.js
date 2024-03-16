@@ -7,7 +7,7 @@ const police = require("./Models/PoliceModel");
 const crime = require("./Models/CrimeModel");
 const criminals = require("./Models/CriminalsModel");
 const CaseHistory = require("./Models/CaseHistory");
-const complaint = require("./Models/Complaint");
+const complaint = require("./Models/ComplaintModel");
 const incident = require("./Models/Incident");
 const suspect = require("./Models/Suspect");
 const lawyer = require("./Models/Lawyer");
@@ -16,6 +16,10 @@ const { SESSION_SECRET } = process.env;
 const passport = require("passport");
 const expressSession = require("express-session");
 const cookieParser = require("cookie-parser");
+const complaintRoute = require("./Routes/complaintRoute");
+const IncidentRoute = require("./Routes/incidentRoute");
+const LawyerRoute=require("./Routes/lawyerRoute");
+const evidenceRoute = require("./Routes/evidenceRoute");
 
 const app = express();
 
@@ -68,6 +72,11 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use("/user", require("./Routes/UserRoute"));
+app.use("/complaint",complaintRoute);
+app.use("/incident",IncidentRoute);
+app.use("/lawyer",LawyerRoute);
+app.use("/evidence",evidenceRoute);
+
 
 // To handle errors in your application.
 app.use((err, req, res, next) => {

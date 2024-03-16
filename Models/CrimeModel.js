@@ -13,8 +13,7 @@ const crimeSchema = new mongoose.Schema(
       required: false,
     },
     CrimeDateTime: {
-      type: Date,
-      default: Date.now,
+      type: Date
     },
     Location: {
       type: String,
