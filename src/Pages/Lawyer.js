@@ -3,6 +3,34 @@ import image from "../Assets/images/Lawyer-rafiki.png";
 import { Link } from "react-router-dom";
 
 const lawyer = () => {
+  // function UsersTable() {
+ 
+  //   const [lawyer,setLawyer] = useState([]);
+  //   useEffect(()=>{
+  //    fetchLawyers(); 
+  //   })
+  //    function fetchLawyers(){
+  //    fetch("http://localhost:5000/user/get/").then((response)=>{
+     
+  //    return response.json()
+  //    })
+  //    .then((data)=>{
+  //      console.log(data.data.data);
+  //      const transformLawyer = data.data.data.map(lawyerData =>{
+  //        return {
+  //          fname: lawyerData.firstname,
+  //          lname: lawyerData.lastname,
+  //          address: lawayerData.address,
+  //          contact: lawyerData.contact,
+  //          email: lawyerData.email
+   
+  //        }
+       
+  //      });
+   
+  //      setUser(transformUser);
+  //    })
+  //   }
   return (
     <>
       <section className="bg-light py-5 py-md-5 py-xl-8">
