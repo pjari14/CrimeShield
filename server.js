@@ -18,6 +18,7 @@ const expressSession = require("express-session");
 const cookieParser = require("cookie-parser");
 const complaintRoute = require("complaintRoute");
 const IncidentRoute = require("./Routes/incidentRoute");
+const LawyerRoute = require("./Routes/lawyerRoute");
 
 const app = express();
 
@@ -72,6 +73,7 @@ app.use(passport.session());
 app.use("/user", require("./Routes/UserRoute"));
 app.use("/complaint", complaintRoute);
 app.use("/incident", IncidentRoute);
+app.use("/lawyer",LawyerRoute);
 
 // To handle errors in your application.
 app.use((err, req, res, next) => {

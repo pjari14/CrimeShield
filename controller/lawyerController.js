@@ -1,5 +1,5 @@
 const Lawyer = require('../Models/Lawyer');
-const {Complaint} = require('../Models/ComplaintModel');
+// const {Complaint} = require('../Models/ComplaintModel');
 
 const createLawyer= async (req,res)=>{
     try{
@@ -39,7 +39,7 @@ const showData = async (req,res)=>{
 
 const showonerecord = async (req,res)=>{
     try{
-        const data=await Lawyer.findOne(req.query);
+        const data=await Lawyer.findById(req.params.id);
         res.status(200).json({
             status: "success",
             data:{
@@ -50,7 +50,7 @@ const showonerecord = async (req,res)=>{
     }catch(err){
         res.status(404).json({
             status: "fail",
-            error: err
+            error: err.message
         })
     }
 }
