@@ -6,11 +6,16 @@ import time from "../Assets/icons/back-in-time.png";
 const Services = () => {
   return (
     <>
-      <div class="page-section" id="services">
+      <div class="page-section " id="services">
         <div class="container p-4 d-flex flex-column justify-content-center align-items-center">
           <div class="text-center">
-            <h2 class="section-heading text-uppercase">Services</h2>
-            <h3 class="section-subheading text-muted">Why choose us?</h3>
+            <h2
+              class="section-heading text-uppercase "
+              style={{ fontWeight: "bold" }}
+            >
+              Services
+            </h2>
+            <h4 class="section-subheading ">Why choose us?</h4>
           </div>
           <div class="col-12 w-100 text-center p-4 d-flex justify-content-center align-items-center">
             <div class="col-md-4 d-flex flex-column align-items-center  justify-content-center">

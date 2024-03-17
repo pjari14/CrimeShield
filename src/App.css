@@ -14,7 +14,7 @@
 }
 
 #services {
-  background-color: #e7ffe3;
+  background-color: #eaeaec;
 }
 .item {
   position: absolute;
@@ -44,6 +44,7 @@ div.scroll {
   transition: all 0.5s;
   cursor: pointer;
 }
+
 .button span {
   cursor: pointer;
   display: inline-block;
@@ -116,11 +117,9 @@ b {
 }
 .card-footer {
   padding: 5%;
-  background-color: #fdebeb;
+  background-color: #eaeaec;
 }
 
 td {
   text-align: justify;
 }
-
-

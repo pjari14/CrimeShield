@@ -55,7 +55,7 @@ const Incident = () => {
     <>
       <div class="container mt-2 pt-2">
         <div class="col-sm-12">
-          <div class=" p-3 text-center mb-2 text-success fs-1">
+          <div class=" p-3 text-center mb-2 text-danger fs-1">
             File your complaint here!
           </div>
           <hr />

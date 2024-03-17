@@ -50,8 +50,8 @@ const Signup = () => {
                   <div class="col-xl-6">
                     <div class="card-body p-md-5 my-5">
                       <h2
-                        class="mb-5 text-uppercase"
-                        style={{ color: "#BA68C8", fontWeight: "bold" }}
+                        class="mb-5 text-uppercase text-danger"
+                        style={{ fontWeight: "bold" }}
                       >
                         Register Yourself Here!
                       </h2>
