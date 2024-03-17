@@ -56,17 +56,11 @@ router.post("/login", async (req, res, next) => {
 });
 
 // To allow Logged In users to access their details.
-router.get("/get",async (req, res, next) => {
+router.get("/get", async (req, res, next) => {
   try {
-    //res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
-    //res.setHeader("Pragma", "no-cache");
-    //return res.status(200).json({ success: true, user: req.user });
-    const data = await User.find() 
-    res.status(200). json({
-    data:{
-    data
-    }
-    }) 
+    res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+    res.setHeader("Pragma", "no-cache");
+    return res.status(200).json({ success: true, user: req.user });
   } catch (error) {
     next(error);
   }

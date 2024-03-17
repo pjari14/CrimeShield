@@ -16,7 +16,7 @@ const { SESSION_SECRET } = process.env;
 const passport = require("passport");
 const expressSession = require("express-session");
 const cookieParser = require("cookie-parser");
-const complaintRoute = require("./Routes/complaintRoute");
+const complaintRoute = require("complaintRoute");
 const IncidentRoute = require("./Routes/incidentRoute");
 
 const app = express();
@@ -76,7 +76,7 @@ app.use("/incident", IncidentRoute);
 // To handle errors in your application.
 app.use((err, req, res, next) => {
   const status = 500;
-  // console.log(err);
+  console.log(err);
   if (err.name === "InternalOAuthError") {
     return res.redirect("http://localhost:3000");
   } else {
