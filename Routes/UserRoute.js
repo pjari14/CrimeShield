@@ -66,6 +66,16 @@ router.get("/get", async (req, res, next) => {
   }
 });
 
+//To display Registered users to admin.
+router.get("/display", async(req,res)=>{
+  const data= await User.find();
+  res.status(200).json({
+    data:{
+      data
+    }
+  })
+});
+
 // To allow logged in users to logout from their account.
 router.get("/logout", (req, res, next) => {
   try {
