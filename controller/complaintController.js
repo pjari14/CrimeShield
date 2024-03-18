@@ -3,7 +3,7 @@ const Complaint = require("../Models/ComplaintModel");
 const createComplaint = async (req, res) => {
   try {
     const details = req.body.details;
-    const data = await Complaint.create(details);
+    const data = await Complaint(details);
     res.status(201).json({
       status: "success",
       data: {
