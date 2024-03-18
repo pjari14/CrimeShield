@@ -1,9 +1,10 @@
-const Evidence = require('../Models/Evidence');
+const Suspect = require('../Models/Suspect');
 
-const createEvidence= async (req,res)=>{
+const createSuspect= async (req,res)=>{
+    console.log(req.body.suspect)
     try{
-
-        const data = await Evidence.create(req.body);
+        const suspect = req.body.suspect;
+        const data = await Suspect.create(suspect);
         res.status(201).json({
             status: "success",
             data:{
@@ -20,7 +21,7 @@ const createEvidence= async (req,res)=>{
 
 const showData = async (req,res)=>{
     try{
-        const data =await Evidence.find(req.query)
+        const data =await Suspect.find(req.query)
         res.status(200).json({
             status: "success",
             data:{
@@ -37,7 +38,7 @@ const showData = async (req,res)=>{
 
 const showonerecord = async (req,res)=>{
     try{
-        const data=await Evidence.findOne(req.params.id);
+        const data=await Suspect.findOne(req.params.id);
         res.status(200).json({
             status: "success",
             data:{
@@ -53,9 +54,9 @@ const showonerecord = async (req,res)=>{
     }
 }
 
-const updateEvidence = async (req,res)=>{
+const updateSuspect = async (req,res)=>{
     try{
-        const data=await Evidence.findByIdAndUpdate(req.params.id,req.body,{
+        const data=await Suspect.findByIdAndUpdate(req.params.id,req.body,{
             new: true,
             runValidators: true
         })
@@ -73,9 +74,9 @@ const updateEvidence = async (req,res)=>{
     }
 }
 
-const deleteEvidence = async(req,res)=>{
+const deleteSuspect = async(req,res)=>{
     try{
-        const data= await Evidence.findByIdAndDelete(req.params.id);
+        const data= await Suspect.findByIdAndDelete(req.params.id);
         res.status(204).json({
             status: "success",
             data:{
@@ -91,10 +92,10 @@ const deleteEvidence = async(req,res)=>{
 }
 
 module.exports={
-    createEvidence,
+    createSuspect,
     showData,
     showonerecord,
-    updateEvidence,
-    deleteEvidence,
+    updateSuspect,
+    deleteSuspect,
 }
 
