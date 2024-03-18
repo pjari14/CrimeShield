@@ -2,12 +2,14 @@ const Incident = require("../Models/Incident");
 const { Complaint } = require("../Models/ComplaintModel");
 
 const createIncident = async (req, res) => {
+  console.log(req.body.incident);
   try {
     // const {complaintId} = req.body;
     // const complaint = Complaint.findOne({_id: complaintId});
     // if(complaint){
-
-    const data = await Incident.create(req.body);
+    const incident = req.body.incident;
+    
+    const data = await Incident.create(incident);
     res.status(201).json({
       status: "success",
       data: {
@@ -19,7 +21,7 @@ const createIncident = async (req, res) => {
     // throw new Error(`Complaint With Id ${complaintId} Not Found`);
     // }
   } catch (err) {
-    res.status(404).json({
+    res.status(400).json({
       status: "fail",
       error: err,
     });

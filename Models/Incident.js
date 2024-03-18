@@ -2,12 +2,12 @@ const mongoose = require("mongoose");
 const { ComplaintSchema } = require("./ComplaintModel");
 
 const incidentSchema = new mongoose.Schema({
-  complaintID: {
-    // type: ComplaintSchema,
-    type: mongoose.Types.ObjectId,
-    // ref: "complaints",
-    required: true,
-  },
+  // complaintID: {
+  //   // type: ComplaintSchema,
+  //   type: mongoose.Types.ObjectId,
+  //   // ref: "complaints",
+  //   required: true,
+  // },
   category: {
     type: String,
     required: true,
@@ -26,11 +26,11 @@ const incidentSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  policestation: {
-    type: String,
-    required: true,
-  },
-  datentime: {
+  // policestation: {
+  //   type: String,
+  //   required: true,
+  // },
+  dateofincident: {
     type: Date,
   },
   reasonofdelay: {

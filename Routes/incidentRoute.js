@@ -13,8 +13,9 @@ const router = express.Router();
 
 router
   .route("/")
-  .post(incidentController.createIncident)
   .get(incidentController.showData);
+
+router.route("/insert").post(incidentController.createIncident);
 
 router
   .route("/:id")
