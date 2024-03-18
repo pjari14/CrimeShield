@@ -2,17 +2,27 @@ const Complaint = require("../Models/ComplaintModel");
 
 const createComplaint = async (req, res) => {
   try {
-    const data = await Complaint.create(req.body);
+    const details = req.body.details;
+    const data = await Complaint.create(details);
     res.status(201).json({
       status: "success",
       data: {
         data,
       },
     });
+    // const newComplaint = new Complaint({
+    //   ...details,
+    // })
+    // newComplaint.save().then((Complaint)=>{
+    //   return res.status(200).json({
+    //     success:true,
+    //     msg: "complaint registered successfully",
+    //   })
+    // })
   } catch (err) {
-    res.status(404).json({
+    res.status(400).json({
       status: "fail",
-      error: err,
+      error: err.message,
     });
   }
 };
