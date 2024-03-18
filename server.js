@@ -16,7 +16,7 @@ const { SESSION_SECRET } = process.env;
 const passport = require("passport");
 const expressSession = require("express-session");
 const cookieParser = require("cookie-parser");
-const complaintRoute = require("complaintRoute");
+const complaintRoute = require("./Routes/complaintRoute");
 const IncidentRoute = require("./Routes/incidentRoute");
 const LawyerRoute = require("./Routes/lawyerRoute");
 
