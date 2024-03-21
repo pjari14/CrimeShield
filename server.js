@@ -3,22 +3,13 @@ const express = require("express");
 require("./ConnectDatabase");
 const cors = require("cors");
 const users = require("./Models/UserModel");
-const police = require("./Models/PoliceModel");
-const crime = require("./Models/CrimeModel");
-const criminals = require("./Models/CriminalsModel");
-const CaseHistory = require("./Models/CaseHistory");
-const complaint = require("./Models/ComplaintModel");
 const incident = require("./Models/Incident");
 const suspect = require("./Models/Suspect");
-const lawyer = require("./Models/Lawyer");
-const evidence = require("./Models/Suspect");
 const { SESSION_SECRET } = process.env;
 const passport = require("passport");
 const expressSession = require("express-session");
 const cookieParser = require("cookie-parser");
-const complaintRoute = require("./Routes/complaintRoute");
 const IncidentRoute = require("./Routes/incidentRoute");
-const LawyerRoute = require("./Routes/lawyerRoute");
 const suspectRoute = require("./Routes/suspectRoute");
 const app = express();
 
@@ -71,10 +62,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use("/user", require("./Routes/UserRoute"));
-app.use("/complaint", complaintRoute);
 app.use("/incident", IncidentRoute);
-app.use("/lawyer", LawyerRoute);
-app.use("/suspect",suspectRoute);
+app.use("/suspect", suspectRoute);
 
 // To handle errors in your application.
 app.use((err, req, res, next) => {
