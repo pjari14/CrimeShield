@@ -26,10 +26,10 @@ const incidentSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  // policestation: {
-  //   type: String,
-  //   required: true,
-  // },
+  policestation: {
+     type: String,
+     required: true,
+   },
   dateofincident: {
     type: Date,
   },
