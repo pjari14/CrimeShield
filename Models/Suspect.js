@@ -2,30 +2,25 @@ const mongoose = require("mongoose");
 
 const suspectSchema = new mongoose.Schema(
   {
-    // complaintID: {
-    //   type: mongoose.Types.ObjectId,
-    //   require: true,
-    // },
-    // IncidentID: {
-    //   type: mongoose.Types.ObjectId,
-    //   ref: "incidents",
-    //   require: true,
-    // },
+    incidentId: {
+      type: mongoose.Types.ObjectId,
+      ref: "incident",
+    },
     susname: {
-      type:String,
-      required: true
+      type: String,
+      required: true,
     },
     sussocial: {
-      type: String
+      type: String,
     },
-    sususername:{
-      type: String
+    sususername: {
+      type: String,
     },
-    susphoto:{
-      type:String
+    susphoto: {
+      type: String,
     },
     otherdetails: {
-      type: String
+      type: String,
     },
     // EvidenceType: {
     //   type: String,

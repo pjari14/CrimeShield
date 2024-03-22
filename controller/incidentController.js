@@ -1,5 +1,4 @@
 const Incident = require("../Models/Incident");
-const { Complaint } = require("../Models/ComplaintModel");
 
 const createIncident = async (req, res) => {
   console.log(req.body.incident);
@@ -8,7 +7,7 @@ const createIncident = async (req, res) => {
     // const complaint = Complaint.findOne({_id: complaintId});
     // if(complaint){
     const incident = req.body.incident;
-    
+
     const data = await Incident.create(incident);
     res.status(201).json({
       status: "success",

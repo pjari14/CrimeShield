@@ -1,13 +1,10 @@
 const mongoose = require("mongoose");
-const { ComplaintSchema } = require("./ComplaintModel");
 
 const incidentSchema = new mongoose.Schema({
-  // complaintID: {
-  //   // type: ComplaintSchema,
-  //   type: mongoose.Types.ObjectId,
-  //   // ref: "complaints",
-  //   required: true,
-  // },
+  userId: {
+    type: mongoose.Types.ObjectId,
+    ref: "users",
+  },
   category: {
     type: String,
     required: true,
