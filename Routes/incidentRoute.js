@@ -11,11 +11,11 @@ const router = express.Router();
 //   return res.status(404).json({ msg: "Hello Lawdwe!" });
 // });
 
-router
-  .route("/")
-  .get(incidentController.showData);
+router.route("/").get(incidentController.showData);
 
-router.route("/insert").post(incidentController.createIncident);
+router
+  .route("/insert")
+  .post(incidentController.upload, incidentController.createIncident);
 
 router
   .route("/:id")

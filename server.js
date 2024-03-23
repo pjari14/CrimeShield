@@ -2,6 +2,7 @@ require("dotenv").config();
 const express = require("express");
 require("./ConnectDatabase");
 const cors = require("cors");
+const path = require("path");
 const users = require("./Models/UserModel");
 const incident = require("./Models/Incident");
 const suspect = require("./Models/Suspect");
@@ -14,10 +15,10 @@ const suspectRoute = require("./Routes/suspectRoute");
 const app = express();
 
 app.set("trust proxy", 1);
-
+app.use(express.static(path.join(__dirname, "public/evidence")));
 // To parse data in incoming requests.
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.json({ limit: "10mb" }));
+app.use(express.urlencoded({ limit: "10mb", extended: true }));
 
 // To use cookies and sessions in your application.
 app.use(cookieParser(SESSION_SECRET));
