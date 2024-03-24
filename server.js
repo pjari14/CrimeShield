@@ -16,7 +16,8 @@ const suspectRoute = require("./Routes/suspectRoute");
 const app = express();
 
 app.set("trust proxy", 1);
-app.use(express.static(path.join(__dirname, "public/evidence")));
+// app.use(express.static(path.join(__dirname, "public/evidence")));
+app.use(express.static("public"));
 // To parse data in incoming requests.
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ limit: "10mb", extended: true }));
