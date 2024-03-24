@@ -35,11 +35,6 @@ const upload = multer({
 
 const createIncident = async (req, res) => {
   try {
-    // const {complaintId} = req.body;
-    // const complaint = Complaint.findOne({_id: complaintId});
-    // if(complaint){
-    // const incident = req.body.incident;
-    console.log(req.file);
     const {
       category,
       state,
@@ -51,10 +46,10 @@ const createIncident = async (req, res) => {
       nameofsus,
       additionalinfo,
     } = req.body;
-    console.log(req.body);
     if (req.file) {
       req.body.evidence = req.file.filename;
     }
+    console.log(req.file);
     const data = await Incident.create({
       category,
       state,
@@ -80,7 +75,7 @@ const createIncident = async (req, res) => {
   } catch (err) {
     res.status(400).json({
       status: "fail",
-      error: err,
+      error: err.message,
     });
   }
 };

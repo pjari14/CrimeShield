@@ -2,6 +2,7 @@ const Suspect = require("../Models/Suspect");
 
 const createSuspect = async (req, res) => {
   console.log(req.body.suspect);
+  console.log(req.body);
   try {
     const suspect = req.body.suspect;
     const data = await Suspect.create(suspect);

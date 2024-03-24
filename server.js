@@ -2,6 +2,7 @@ require("dotenv").config();
 const express = require("express");
 require("./ConnectDatabase");
 const cors = require("cors");
+const morgan = require("morgan");
 const path = require("path");
 const users = require("./Models/UserModel");
 const incident = require("./Models/Incident");
@@ -35,7 +36,7 @@ app.use(
     },
   })
 );
-
+app.use(morgan("dev"));
 // To Enable Requests from CLIENT_URL.
 app.use(
   cors({
