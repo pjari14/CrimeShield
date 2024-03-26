@@ -13,7 +13,9 @@ const router = express.Router();
 
 router.route("/").get(suspectController.showData);
 
-router.route("/insert").post(suspectController.createSuspect);
+router
+  .route("/insert")
+  .post(suspectController.upload, suspectController.createSuspect);
 
 router
   .route("/:id")

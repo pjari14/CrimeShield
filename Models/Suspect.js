@@ -8,7 +8,7 @@ const suspectSchema = new mongoose.Schema(
     },
     susname: {
       type: String,
-      required: true,
+      // required: true,
     },
     sussocial: {
       type: String,
