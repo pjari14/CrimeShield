@@ -64,6 +64,7 @@ require("./Utilities/PassportConfig");
 app.use(passport.initialize());
 app.use(passport.session());
 
+// routes
 app.use("/user", require("./Routes/UserRoute"));
 app.use("/incident", IncidentRoute);
 app.use("/suspect", suspectRoute);
